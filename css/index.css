@@ -46,7 +46,7 @@ a, a:active, a:hover, a:visited{
 	font-weight: lighter;
 }
 .foot .foot-item:nth-child(1) i{
-	background-position: -2.76rem -0.4rem;
+	background-position: -2.76rem -0.05rem;
 }
 .foot .foot-item:nth-child(2) i{
 	background-position: -1.83rem -2.22rem;
@@ -58,10 +58,10 @@ a, a:active, a:hover, a:visited{
 	color: #EF821E;
 }
 .foot .on:nth-child(1) i{
-	background-position: -2.18rem -2.22rem;
+	background-position: -2.76rem -0.4rem;
 }
 .foot .on:nth-child(2) i{
-	background-position: -1.13rem -2.22rem;
+	background-position: -1.48rem -2.22rem;
 }
 .foot .on:nth-child(3) i{
 	background-position: -1.48rem -2.22rem;
@@ -356,7 +356,137 @@ a, a:active, a:hover, a:visited{
 	height: 0.6rem;
 	margin-top: 0.35rem;
 	margin-left: 0.25rem;
-	background: white;
+}
+.my-head .my-head-content .my-head-content-logo{
+	display: block;
+	float: left;
+	height: 0.6rem;
+	width: 0.6rem;
+	border-radius: 100%;
+}
+.my-head .my-head-content .my-head-content-info{
+	float: left;
+	height: 0.6rem;
+	width: 2.2rem;
+	margin-left: 0.2rem;
+}
+.my-head .my-head-content .my-head-content-info .my-head-content-info-name{
+	height: 0.25rem;
+	font-size: 0.18rem;
+	color: #FFFFFF;
+	line-height: 0.25rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.my-head .my-head-content .my-head-content-info .my-head-content-info-tell{
+	height: 0.2rem;
+	margin-top: 0.15rem;
+	opacity: 0.7;
+	font-size: 0.14rem;
+	color: #FFFFFF;
+	line-height: 0.2rem;
+}
+.my-head i{
+	position: absolute;
+	display: block;
+	top: 0.59rem;
+	right: 0.45rem;
+	width: 0.12rem;
+	height: 0.08rem;
+    background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+	background-position: -2.18rem -1.63rem;
+	transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg); 
+}
+.my-list-item{
+	height: 0.6rem;
+	width: 3.35rem;
+	margin: 0 auto;
+	border-bottom: 1px solid #F1F1F1;
+}
+.my-list-item i{
+	display: block;
+	float: left;
+	height: 0.28rem;
+	width: 0.28rem;
+	margin-top: 0.16rem;
+    background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+}
+.my-list-item .course{
+	background-position: -1.96rem -0.87rem;
+}
+.my-list-item .kefu{
+	background-position: -1.96rem -0.49rem;
+}
+.my-list-item .help{
+	background-position: -1.96rem -1.25rem;
+}
+.my-list-item .arr{
+	float: right;
+	display: block;
+	width: 0.12rem;
+	height: 0.08rem;
+	margin-top: 0.24rem;
+    background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+	background-position: -1.69rem -1.42rem;
+	transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg); 
+}
+.my-list-item p{
+	float: right;
+	height: 0.6rem;
+	margin-right: 0.08rem;
+	font-size: 0.14rem;
+	color: #EF821E;
+	line-height: 0.6rem;
+}
+.my-list-item span{
+	display: block;
+	float: left;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	margin-left: 0.1rem;
+	font-size: 0.16rem;
+	color: #232323;
+}
+.my-course-item{
+	position: relative;
+	width: 2.95rem;
+	height: 0.6rem;
+	margin: 0 auto;
+	border-bottom: 1px solid #F1F1F1;
+	font-size: 0.14rem;
+	color: #4B4B4B;
+	line-height: 0.6rem;
+}
+.my-course-item .my-course-item-name{
+	float: left;
+	width: 0.8rem;
+	height: 0.6rem;
+}
+.my-course-item .my-course-item-num{
+	float: left;
+	height: 0.6rem;
+	margin-left: 0.3rem;
+}
+.my-course-item a{
+	float: right;
+	display: block;
+	font-size: 0.14rem;
+	color: #EF821E;
+	height: 0.2rem;
+	margin-top: 0.2rem;
+	line-height: 0.2rem;
 }
 /* 公司介绍 */
 .company-tab{
