@@ -5,6 +5,9 @@
  	padding: 0;
   	font-family:'Microsoft Yahei', '微软雅黑', arial, \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti,'宋体';
 }
+a, a:active, a:hover, a:visited{
+    text-decoration: none!important;
+}
 .wrap{
   	position: relative;
   	width: 100%;
@@ -100,6 +103,9 @@
 }    
 
 /* 登陆页 */
+.login-content{
+    margin-bottom: 0.2rem;
+}
 .login-logo{
     width: 1rem;
     height: 1.01rem;
@@ -115,22 +121,22 @@
 	width: 2.95rem;
 	height: 0.34rem;
 	margin: 0 auto;
-	margin-top: 0.2rem;
+    margin-top: 0.2rem;
+    border-radius: 0.04rem;
+	border: 1px solid #EF821E;
 }
 .login-input:first-child{
 	margin-top: 0;
 }
 .login-input input{
-	height: 100%;
-	width: 100%;
+    height: 100%;
+    width: 2.23rem;
 	opacity: 0.3;
-	border: 1px solid #EF821E;
-    border-radius: 0.04rem;
-    text-indent: 0.58rem;
+    margin-left: 0.58rem;
     opacity: 0.7;
     font-size: 0.14rem;
     color: #232323; 
-    line-height: 0.34rem;
+    border: none;
 }
 .login-input span{
 	position: absolute;
@@ -142,7 +148,6 @@
     opacity: 0.7;
     font-size: 0.14rem;
     color: #232323;  
-    font-weight: lighter; 
     margin-left: 0.14rem;
 }
 .login-a{
@@ -151,7 +156,6 @@
     margin: 0 auto;
     margin-top: 0.2rem;
     opacity: 0.7;
-    font-weight: lighter;
     font-size: 0.12rem;
     color: #EF821E;
     line-height: 0.18rem;;
@@ -163,6 +167,92 @@
 .login-a a:last-child{
     display: block;
     float: right;
+}
+.login-btn{
+    display: block;
+    height: 0.4rem;
+    width: 2.95rem;
+    background: #EF821E;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+    font-size: 0.14rem;;
+    color: #FFFFFF;
+    line-height: 0.4rem;
+    text-align: center;
+}
+.login-foot{
+    margin-top: 1.4rem;
+}
+.login-foot p{
+    height: 100%;
+    opacity: 0.7;
+    font-size: 0.12rem;
+    color: #A9A9A9;
+    line-height: 100%;  
+    text-align: center;  
+    margin-bottom: 0.2rem;
+}
+.login-foot .login-foot-icon{
+    margin: 0 auto;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+.login-foot .login-foot-icon div{
+    display: inline-block;
+    height: 0.34rem;
+}
+/* .login-foot .login-foot-icon-icon div:after{
+    clear: both;
+} */
+.login-foot .login-foot-icon i{
+    float: left;
+    display: block;
+    width: 0.34rem;
+    height: 0.34rem;
+    background: url(../img/icon_sprites.png);
+    background-size: 3.06rem 2.84rem;
+}
+.login-foot .login-foot-icon .login-foot-icon-wx{
+    background-position: -1.25rem -1.16rem;
+}
+.login-foot .login-foot-icon .login-foot-icon-qq{
+    background-position: -1.96rem -0.05rem;
+}
+.login-foot .login-foot-icon span{
+    float: left;
+    display: block;
+    height: 0.24rem;
+    width: 1px;
+    margin: 0.05rem 0.15rem;
+    background: #D4D4D4;
+}
+.login-foot .login-foot-a{
+    margin: 0 auto;
+    text-align: center;  
+}
+.login-foot .login-foot-a div{
+    display: inline-block;
+    height: 0.18rem;
+    opacity: 0.7;
+    font-size: 0.12rem;
+    color: #EF821E;
+    margin: 0 auto;
+    text-align: center;  
+}
+.login-foot .login-foot-a a{
+    display: block;
+    float: left;
+    height: 100%;
+    line-height: 0.18rem;
+}
+.login-foot .login-foot-a span{
+    display: block;
+    float: left;
+    height: 0.14rem;
+    width: 1px;
+    background: #EF821E;
+    margin: 0.02rem 0.1rem;
 }
 
 /* 我的 */
