@@ -43,7 +43,6 @@ a, a:active, a:hover, a:visited{
 	color: #969696;
 	line-height: 0.17rem;
 	text-align: center;
-	font-weight: lighter;
 }
 .foot .foot-item:nth-child(1) i{
 	background-position: -2.76rem -0.05rem;
@@ -414,6 +413,7 @@ a, a:active, a:hover, a:visited{
 	float: left;
 	height: 0.28rem;
 	width: 0.28rem;
+	margin-left: -0.06rem;
 	margin-top: 0.16rem;
     background: url(../img/icon_sprites.png);
 	background-size: 3.06rem 2.84rem;
@@ -432,7 +432,7 @@ a, a:active, a:hover, a:visited{
 	display: block;
 	width: 0.12rem;
 	height: 0.08rem;
-	margin-top: 0.24rem;
+	margin-top: 0.26rem;
     background: url(../img/icon_sprites.png);
 	background-size: 3.06rem 2.84rem;
 	background-position: -1.69rem -1.42rem;
@@ -445,7 +445,7 @@ a, a:active, a:hover, a:visited{
 .my-list-item p{
 	float: right;
 	height: 0.6rem;
-	margin-right: 0.08rem;
+	margin-right: 0.15rem;
 	font-size: 0.14rem;
 	color: #EF821E;
 	line-height: 0.6rem;
