@@ -106,7 +106,7 @@ a, a:active, a:hover, a:visited{
 .login-content{
     margin-bottom: 0.2rem;
 }
-.login-logo{
+.logo{
     width: 1rem;
     height: 1.01rem;
     margin: 0 auto;
@@ -254,7 +254,96 @@ a, a:active, a:hover, a:visited{
     background: #EF821E;
     margin: 0.02rem 0.1rem;
 }
-
+/* 注册页 */
+.yzm{
+	position: relative;
+	width: 2.95rem;
+	height: 0.34rem;
+	margin: 0 auto;
+    margin-top: 0.2rem;
+}
+.yzm .login-input{
+	float: left;
+	width: 2rem;
+	margin: 0;
+}
+.yzm .login-input input{
+	width: 1.28rem;
+}
+.yzm a{
+	display: block;
+	float: right;
+	height: 0.34rem;
+	width: 0.8rem;
+	background: #EF821E;
+	border-radius: 4px;
+	font-size: 0.12rem;
+	color: #FFFFFF;
+	line-height: 0.34rem;
+	text-align: center;
+}
+.yzm .disabled{
+	background: #A9A9A9;
+}
+/* 申请体验课程 */
+.apply_desc{
+	position: fixed;
+	bottom: 0.2rem;
+	left: 0.4rem;
+	width: 2.95rem;
+	opacity: 0.7;
+	font-size: 0.12rem;
+	color: #868686;
+	line-height: 0.2rem;
+	text-align: center;
+}
+/* 申请成功 */
+.icon-ok{
+	margin-top:0.6rem;
+	margin-bottom: 0.2rem;
+	height: 0.6rem;
+	text-align: center;
+}
+.icon-ok i{
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.6rem;
+    background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+	background-position: -0.05rem -1.16rem;
+}
+.apply-success-desc{
+	height: 0.3rem;
+	font-size: 0.2rem;
+	color: #232323;
+	line-height: 0.3rem;
+	text-align: center;
+}
+.apply-success-qr{
+	height: 1.2rem;
+	width: 1.2rem;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+}
+.apply-success-qr img{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.apply-back{
+	position: fixed;
+	left: 1.275rem;
+	bottom: 0.2rem;
+	height: 0.4rem;
+	width: 1.2rem;
+	border: 1px solid #EF821E;
+	border-radius: 1rem;
+	line-height: 0.4rem;
+	opacity: 0.7;
+	font-size: 0.14rem;;
+	color: #EF821E;
+	text-align: center;
+}
 /* 我的 */
 .my-head{
 	width: 100%;
@@ -268,4 +357,49 @@ a, a:active, a:hover, a:visited{
 	margin-top: 0.35rem;
 	margin-left: 0.25rem;
 	background: white;
+}
+/* 公司介绍 */
+.company-tab{
+	width: 100%;
+	height: 0.5rem;
+}
+.company-tab a{
+	position: relative;
+	display: block;
+	float: left;
+	height: 0.5rem;
+	width: 1.25rem;
+	font-size: 0.14rem;
+	color: #8C8C8C;
+	text-align: center;
+	line-height: 0.5rem;
+}
+.company-tab .on{
+	color: #EF821E;
+}
+.company-tab .on:after{
+	position: absolute;
+	display: block;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 1.25rem;
+	height: 0.04rem;
+	background: #EF821E;
+}
+.company-info{
+	width: 3.35rem;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+	opacity: 0.7;
+	font-size: 0.12rem;
+	line-height: 0.18rem;
+}
+.company-info .company-title{
+	color: #A9A9A9;
+	line-height: 0.18rem;
+}
+.company-info .company-desc{
+	color: #4B4B4B;
+	margin-top: 0.06rem;
 }

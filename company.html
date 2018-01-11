@@ -27,6 +27,65 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
+        <div class="company-tab">
+            <!-- 激活态添加类on -->
+            <a class="on" tab-index="1">公司简介</a>
+            <a tab-index="2">加入我们</a>
+            <a tab-index="3">联系我们</a>
+        </div>
+        <div id="info1">
+            <div class="company-info">
+                <div class="company-title">绘画提高班</div>
+                <div class="company-desc">2016年，成长为日语直2017年4月，早道网校注册学员数突破300万，韩语网校、德语网校陆续上线，正式升级为多语种在线学习平台。</div>
+            </div>
+            <div class="company-info">
+                <div class="company-title">计算机班</div>
+                <div class="company-desc">现任中国古代史专业教授、博士生导师。南京大学思想家中心兼职教授。出版著作一部，译着（合作）一部。</div>
+            </div>
+            <div class="company-info">
+                <div class="company-title">发展历程</div>
+                <div class="company-desc">2016年，成长为日语直2017年4月，早道网校注册学员数突破300万，韩语网校、德语网校陆续上线，正式升级为多语种在线学习平台。</div>
+            </div>
+        </div>
+        <div id="info2" style="display:none;">
+            <div class="company-info">
+                <div class="company-title">生物信息分析师</div>
+                <div class="company-desc">
+                    <p>工作职责：</p>
+                    <p>1、NGS/芯片数据分析；</p>
+                    <p>2、生物信息算法研发；</p>
+                    <p>3、生物信息分析流程开发及部署；</p>
+                </div>
+            </div>
+            <div class="company-info">
+                <div class="company-title">需求工程师</div>
+                <div class="company-desc">
+                    <p>1、本科以上学历，有生物信息相关背景或同等项目经验优先；</p>
+                    <p>2、2年以上需求分析工作经验，健康或互联网行业优先；</p>
+                    <p>3、良好的沟通和表达能力，能够快速分析理解用户需求；</p>
+                    <p>4、具有良好的文档编写能力，有一定原型设计能力；</p>
+                    <p>5、对系统设计和开发有基本理解；</p>
+                    <p>6、具备团队协作精神；</p>
+                </div>
+            </div>
+        </div>
+        <div id="info3" style="display:none;">
+            <div class="company-info">
+                <div class="company-desc">
+                    <p>合作邮箱：21314342354@superstudy.com</p>
+                    <p>联系电话：13875023487</p>
+                    <p>hr邮箱： 123149898987@superstudy.com</p>
+                </div>
+            </div>
+            <div class="company-info">
+                <div class="company-desc">
+                    <p>超级书房天安店小超微信：xiaochao1</p>
+                    <p>超级书房天安店小超微信：xiaochao1</p>
+                    <p>超级书房世界之窗店小超微信：xiaochao3</p>
+                    <p>超级书房宝安店小超微信：xiaochao1</p>
+                </div>
+            </div>
+        </div>
         <div class="foot">
             <!-- foot-item激活态添加类on -->
             <div class="foot-item on">
@@ -44,6 +103,7 @@
         </div>
     </div>
     <script src="./js/swiper.min.js"></script>
+    <script src="./js/zepto.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             pagination: {
@@ -53,6 +113,12 @@
             autoplay: {
                 delay: 3000
             }
+        });
+        $('[tab-index]').bind('click', function(){
+            $('#info1, #info2, #info3').hide();
+            $('#info' + $(this).attr('tab-index')).show();
+            $('[tab-index]').removeClass('on');
+            $(this).addClass('on');
         });
     </script>
 </body>
