@@ -100,21 +100,37 @@
 }    
 
 /* 登陆页 */
+.login-logo{
+    width: 1rem;
+    height: 1.01rem;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    background: url(../img/icon_sprites.png);
+    background-size: 3.06rem 2.84rem;
+    background-position: -0.05rem -0.05rem;
+}
 .login-input{
 	position: relative;
 	width: 2.95rem;
 	height: 0.34rem;
 	margin: 0 auto;
-}
-.login-input:last-child{
 	margin-top: 0.2rem;
+}
+.login-input:first-child{
+	margin-top: 0;
 }
 .login-input input{
 	height: 100%;
 	width: 100%;
 	opacity: 0.3;
 	border: 1px solid #EF821E;
-	border-radius: 0.04rem;
+    border-radius: 0.04rem;
+    text-indent: 0.58rem;
+    opacity: 0.7;
+    font-size: 0.14rem;
+    color: #232323; 
+    line-height: 0.34rem;
 }
 .login-input span{
 	position: absolute;
@@ -122,7 +138,31 @@
 	height: 100%;
 	line-height: 0.34rem;
 	top: 0;
-	left: 0;
+    left: 0;
+    opacity: 0.7;
+    font-size: 0.14rem;
+    color: #232323;  
+    font-weight: lighter; 
+    margin-left: 0.14rem;
+}
+.login-a{
+    height: 0.18rem;
+	width: 2.95rem;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    opacity: 0.7;
+    font-weight: lighter;
+    font-size: 0.12rem;
+    color: #EF821E;
+    line-height: 0.18rem;;
+}
+.login-a a:first-child{
+    display: block;
+    float: left;
+}
+.login-a a:last-child{
+    display: block;
+    float: right;
 }
 
 /* 我的 */
