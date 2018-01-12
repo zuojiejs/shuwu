@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>超级书房</title>
+    <script src="./js/flexible.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/banner.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner.png">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="shufang-title">
+            所有课程
+            <a>热门课程</a>
+        </div>
+        <div class="shufang-nearby">
+            <a>
+                <div class="shufang-nearby-item">
+                    <i></i>
+                    <img src="./img/banner.png">
+                    <div class="shufang-nearby-item-foot">
+                        <div class="shufang-nearby-item-foot-name">华侨城天鹅堡书房</div>
+                        <div class="shufang-nearby-item-foot-addr">12:00-14:00</div>
+                        <div class="shufang-nearby-item-foot-btn">约课</div>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="shufang-nearby-item">
+                    <i class="red"></i>
+                    <img src="./img/banner.png">
+                    <div class="shufang-nearby-item-foot">
+                            <div class="shufang-nearby-item-foot-name">华侨城天鹅堡书房</div>
+                            <div class="shufang-nearby-item-foot-addr">12:00-14:00</div>
+                            <div class="shufang-nearby-item-foot-btn disabled">约课</div>
+                    </div>
+                </div>
+            </a>
+            <a>
+                <div class="shufang-nearby-item">
+                    <i></i>
+                    <img src="./img/banner.png">
+                    <div class="shufang-nearby-item-foot">
+                            <div class="shufang-nearby-item-foot-name">华侨城天鹅堡书房</div>
+                            <div class="shufang-nearby-item-foot-addr">12:00-14:00</div>
+                            <div class="shufang-nearby-item-foot-btn">约课</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="foot">
+            <!-- foot-item激活态添加类on -->
+            <div class="foot-item">
+                <i></i>
+                <span>书房</span>
+            </div>
+            <div class="foot-item on">
+                <i></i>
+                <span>课程</span>
+            </div>
+            <div class="foot-item">
+                <i></i>
+                <span>我的</span>
+            </div>
+        </div>
+    </div>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 3000
+            }
+        });
+    </script>
+</body>
+</html>

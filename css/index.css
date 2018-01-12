@@ -661,7 +661,6 @@ a, a:active, a:hover, a:visited{
 .shufang-title a{
     float: right;
     display: block;
-    width: 0.5rem;
     font-size: 0.14rem;
     color: #EF821E;
     text-align: right;
@@ -702,7 +701,8 @@ a, a:active, a:hover, a:visited{
     position: relative;
     height: 2.5rem;
     margin-bottom: 0.15rem;
-    border-radius: 0.08rem;
+	border-radius: 0.08rem;
+	z-index: 1;
 }
 .shufang-nearby .shufang-nearby-item i{
     position: absolute;
@@ -756,6 +756,29 @@ a, a:active, a:hover, a:visited{
     color: #EF821E;
     height: 0.16rem;
     line-height: 0.16rem;  
+}
+.shufang-nearby .shufang-nearby-item .shufang-nearby-item-foot .shufang-nearby-item-foot-btn{
+	position: absolute;
+	bottom: 0.2rem;
+	right: 0.12rem;
+	height: 0.28rem;
+	width: 0.76rem;
+	line-height: 0.28rem;
+	font-size: 0.14rem;
+	color: #FFFFFF;
+	background: #EF821E;
+	border-radius: 1rem;
+	text-align: center;
+	z-index: 2;
+}
+.shufang-nearby .shufang-nearby-item .shufang-nearby-item-foot .shufang-nearby-item-foot-btn:active{
+	background: #C4650E;
+}
+.shufang-nearby .shufang-nearby-item .shufang-nearby-item-foot .disabled{
+	background: #999999;
+}
+.shufang-nearby .shufang-nearby-item .shufang-nearby-item-foot .disabled:active{
+	background: #999999;
 }
 /* 书房详情 */
 .shufang-detail-head{
