@@ -19,7 +19,8 @@ a, a:active, a:hover, a:visited{
 	width: 100%;
 	height: 0.5rem;
 	background: #FFFFFF;
-	border-top: 0.5px solid #979797;
+    border-top: 0.5px solid #979797;
+    z-index: 999;
 }
 .foot .foot-item{
 	position: relative;
@@ -532,4 +533,103 @@ a, a:active, a:hover, a:visited{
 .company-info .company-desc{
 	color: #4B4B4B;
 	margin-top: 0.06rem;
+}
+/* 购买成功 */
+.buy-success-tip{
+    height: 0.28rem;
+    margin-top: 0.2rem;
+    text-align: center;
+    line-height: 0.28rem;
+    font-size: 0.2rem;
+    color: #232323;
+}
+.buy-success-btn{
+    height: 0.4rem;
+    margin-top: 0.4rem;
+    text-align: center;
+}
+.buy-success-btn a{
+    display: inline-block;
+    height: 0.4rem;
+    width: 1.2rem;
+    border-radius: 1rem;
+    font-size: 0.14rem;
+    text-align: center;
+    line-height: 0.4rem;
+}
+.buy-success-btn .back{
+    border: 1px solid #EF821E;
+    color: #EF821E;
+    margin-right: 0.2rem;
+}
+.buy-success-btn .share{
+    background: #EF821E;
+    color: white;
+}
+.buy-success-btn .share:active{
+    background: #C4650E;
+}
+/* 无网络 */
+.icon-no-wifi{
+    margin-top: 1.16rem;
+    text-align: center;
+}
+.icon-no-wifi i{
+    display: inline-block;
+    width: 0.71rem;
+    height: 0.62rem;
+    background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+	background-position: -1.15rem -0.05rem;
+}
+.no-wifi-text{
+    height: 0.17rem;
+    margin-top: 0.24rem;
+    line-height: 0.17rem;
+    text-align: center;
+    font-size: 0.12rem;
+    color: #A9A9A9;
+}
+/* 加载中 */
+.loading-content{
+    height: 0.23rem;
+    margin-top: 0.3rem;
+    text-align: center;
+}
+.loading-content div{
+    display: inline-block;
+}
+.loading-content i{
+    display: block;
+    float: left;
+    height: 0.23rem;
+    width: 0.24rem;
+    background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+	background-position: -2.76rem -1.09rem;
+}
+.loading-content span{
+    display: block;
+    float: left;
+    height: 0.23rem;
+    margin-left: 0.1rem;
+    font-size: 0.12rem;
+    color: #232323;
+    line-height: 0.23rem;
+}
+/* 二维码 */
+.qr-img{
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    margin: 0 auto;
+    margin-top: 0.9rem;
+}
+.qr-text{
+    height: 0.25rem;
+    margin-top: 0.17rem;
+    line-height: 0.25rem;
+    font-size: 0.18rem;
+    color: #B7B7B7;
+    text-align: center;
 }
