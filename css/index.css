@@ -491,11 +491,12 @@ a, a:active, a:hover, a:visited{
 	line-height: 0.2rem;
 }
 /* 公司介绍 */
-.company-tab{
+.tab{
 	width: 100%;
 	height: 0.5rem;
+	border-bottom: 1px solid #F1F1F1;
 }
-.company-tab a{
+.tab a{
 	position: relative;
 	display: block;
 	float: left;
@@ -506,10 +507,10 @@ a, a:active, a:hover, a:visited{
 	text-align: center;
 	line-height: 0.5rem;
 }
-.company-tab .on{
+.tab .on{
 	color: #EF821E;
 }
-.company-tab .on:after{
+.tab .on:after{
 	position: absolute;
 	display: block;
 	content: '';
@@ -728,7 +729,11 @@ a, a:active, a:hover, a:visited{
     position: relative;
     height: 0.7rem;
     padding-left: 0.13rem;
-    overflow: hidden;
+	overflow: hidden;
+	box-shadow:0 0 0.1rem rgba(0, 0, 0, .5);
+	border-bottom-left-radius: 0.08rem;
+	border-bottom-right-radius: 0.08rem;
+	z-index: -1;
 }
 .shufang-nearby .shufang-nearby-item .shufang-nearby-item-foot .shufang-nearby-item-foot-name{
     font-size: 0.14rem;
@@ -751,4 +756,168 @@ a, a:active, a:hover, a:visited{
     color: #EF821E;
     height: 0.16rem;
     line-height: 0.16rem;  
+}
+/* 书房详情 */
+.shufang-detail-head{
+	height: 0.65rem;
+	width: 3.35rem;
+	margin: 0 auto;
+	line-height: 0.65rem;
+}
+.shufang-detail-head .shufang-detail-head-name{
+	float: left;
+	font-size: 0.18rem;
+	color: #232323;
+}
+.shufang-detail-head a{
+	display: block;
+	float: right;
+	font-size: 0.14rem;
+	color: #EF821E;
+}
+.shufang-detail-head a:last-child{
+	margin-right: 0.2rem;
+}
+.shufang-detail-week{
+	height: 0.3rem;
+	margin: 0 auto;
+	margin-bottom: 0.05rem;
+	padding-left: 0.2rem;
+	border-bottom: 1px solid #F1F1F1;
+}
+.shufang-detail-week div{
+	position: relative;
+	float: left;
+	width: 0.475rem;
+	height: 100%;
+	line-height: 0.2rem;
+	font-size: 0.14rem;
+	color: #8C8C8C;
+	text-align: center;
+}
+.shufang-detail-week .on{
+	color: #EF821E;
+}
+.shufang-detail-week .on::after{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 0.475rem;
+	height: 0.04rem;
+	background: #EF821E;
+}
+.shufang-detail-list .shufang-detail-list-item{
+	position: relative;
+	height: 1.48rem;
+	padding: 0 0.2rem;
+	overflow: hidden;
+	border-bottom: 1px solid #F1F1F1;
+}
+.shufang-detail-list .shufang-detail-list-item img{
+	display: block;
+	float: left;
+	height: 1.18rem;
+	width: 1.18rem;
+	margin-top: 0.15rem;
+	border-radius: 0.04rem;
+}
+.shufang-detail-list .shufang-detail-list-item-detail{
+	position: relative;
+	float: left;
+	height: 1.18rem;
+	width: 2.03rem;
+	margin-top: 0.15rem;
+	margin-left: 0.14rem;
+}
+.shufang-detail-list .shufang-detail-list-item-detail p{
+	font-size: 0.14rem;
+	color: #232323;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.shufang-detail-list .shufang-detail-list-item-detail span{
+	display: block;
+	margin-top: 0.06rem;
+	font-size: 0.12rem;
+	color: #8C8C8C;
+	height: 0.24rem;
+	line-height: 0.24rem;
+}
+.shufang-detail-list .shufang-detail-list-item-detail .shufang-detail-list-item-detail-invite{
+	height: 0.24rem;
+	margin-top: 0.1rem;
+}
+.shufang-detail-list .shufang-detail-list-item-detail .shufang-detail-list-item-detail-invite i{
+	display: block;
+	float: left;
+    width: 0.13rem;
+	height: 0.16rem;
+	margin-top: 0.04rem;
+    background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+    background-position: -2.53rem -2.22rem;
+}
+.shufang-detail-list .shufang-detail-list-item-detail .shufang-detail-list-item-detail-invite span{
+	float: left;
+	margin: 0;
+	margin-left: 0.07rem;
+	color: #EF821E;
+}
+.shufang-detail-list .shufang-detail-list-item-detail .shufang-detail-list-item-detail-money{
+	font-size: 0.18rem;
+	margin-top: 0.08rem;
+	color: #EF821E;
+	letter-spacing: 0;
+	line-height: 0.24rem;
+}
+.shufang-detail-list-item-detail .xin{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0.2rem;
+	height: 0.18rem;
+    background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+    background-position: -0.66rem -2.58rem;
+}
+.shufang-detail-list-item-detail .red{
+	width: 0.18rem;
+	height: 0.16rem;
+    background-position: -0.96rem -2.58rem;
+}
+.shufang-detail-list-item .hot{
+	position: absolute;
+	top: 0.15rem;
+	left: 0.2rem;
+	width: 0.4rem;
+	height: 0.4rem;
+    background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+    background-position: -0.75rem -1.16rem;
+}
+.shufang-detail-list-item-detail .shufang-detail-list-item-detail-btn{
+	position: absolute;
+	bottom: 0;
+	right: -0.08rem;
+	height: 0.28rem;
+	width: 0.76rem;
+	line-height: 0.28rem;
+	font-size: 0.14rem;
+	color: #FFFFFF;
+	background: #EF821E;
+	border-radius: 1rem;
+	text-align: center;
+}
+.shufang-detail-list-item-detail .shufang-detail-list-item-detail-btn:active{
+	background: #C4650E;
+}
+.shufang-detail-list-item-detail .disabled{
+	background: #999999;
+}
+.shufang-detail-list-item-detail .disabled:active{
+	background: #999999;
 }
