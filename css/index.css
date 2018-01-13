@@ -134,6 +134,9 @@ a, a:active, a:hover, a:visited{
 	width: 100%;
 	background: #EF821E;
 }
+.foot-btn .foot-btn-btn1:active{
+	background: #C4650E;
+}
 .foot-btn2 .foot-btn-btn1{
 	width: 2.5rem;
 }
@@ -252,6 +255,7 @@ a, a:active, a:hover, a:visited{
 	text-align: center;
 }
 .common-info-line .common-info-line-item .common-info-line-item-num .common-info-line-item-num-sub{
+	position: relative;
 	float: left;
 	height: 0.24rem;
 	width: 0.24rem;
@@ -259,7 +263,30 @@ a, a:active, a:hover, a:visited{
 	font-size: 0.18rem;
 	border-right: 1px solid #C4C4C4;
 }
+.common-info-line .common-info-line-item .common-info-line-item-num .common-info-line-item-num-sub i{
+	position: absolute;
+	display: block;
+	top: -0.01rem;
+	left: -0.01rem;
+	height: 0.26rem;
+	width: 0.26rem;
+	background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+	background-position: -1.13rem -1.86rem;
+}
+.common-info-line .common-info-line-item .common-info-line-item-num .common-info-line-item-num-add i{
+	position: absolute;
+	display: block;
+	top: -0.01rem;
+	left: -0.01rem;
+	height: 0.26rem;
+	width: 0.26rem;
+	background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+	background-position: -0.77rem -1.86rem;	
+}
 .common-info-line .common-info-line-item .common-info-line-item-num .common-info-line-item-num-add{
+	position: relative;
 	float: left;
 	height: 0.24rem;
 	width: 0.24rem;
@@ -1236,3 +1263,105 @@ a, a:active, a:hover, a:visited{
 .course-info-block .course-info-block-item .course-info-block-item-value div{
 	height: 0.24rem;
 }
+/* 书房介绍页 */
+.shufang-info-block{
+	width: 3.35rem;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+}
+.shufang-info-block .shufang-info-block-title{
+	position: relative;
+	height: 0.18rem;
+	opacity: 0.7;
+	font-size: 0.12rem;;
+	color: #A9A9A9;
+	line-height: 0.18rem;
+	padding-left: 0.18rem;
+}
+.shufang-info-block .shufang-info-block-title i{
+	display: block;
+	position: absolute;
+	top: -0.015rem;
+	left: -0.05rem;
+	width: 0.21rem;
+	height: 0.21rem;
+    background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+}
+.shufang-info-block .shufang-info-block-title .addr{
+	background-position: -2.76rem -1.73rem;
+}
+.shufang-info-block .shufang-info-block-title .tell{
+	background-position: -2.76rem -1.42rem;
+}
+.shufang-info-block .shufang-info-block-title .info{
+	background-position: -2.76rem -2.04rem;
+}
+.shufang-info-block .shufang-info-block-title .shebei{
+	background-position: -0.05rem -2.58rem;
+}
+.shufang-info-block .shufang-info-block-desc{
+	font-size: 0.14rem;
+	color: #4B4B4B;
+	line-height: 0.2rem;
+	margin-top: 0.08rem;
+}
+.shufang-info-block .shufang-info-block-tell{
+	font-size: 0.14rem;
+	color: #EF821E;
+	line-height: 0.2rem;
+	margin-top: 0.08rem;
+}
+.shufang-info-block .shufang-info-block-shebei{
+	width: 2.95rem;
+	margin: 0 auto;
+	margin-top: 0.3rem;
+	font-size: 0.12rem;
+	color: #EF821E;
+	line-height: 0.17rem;
+	overflow: hidden;
+}
+.shufang-info-block .shufang-info-block-shebei:after{
+	clear: both;
+}
+.shufang-info-block .shufang-info-block-shebei div{
+	float: left;
+	width: 0.24rem;
+	margin-right: 0.43rem;
+	margin-bottom: 0.15rem;
+}
+.shufang-info-block .shufang-info-block-shebei div:nth-child(5n+0){
+	margin-right: 0px;
+}
+.shufang-info-block .shufang-info-block-shebei div i{
+	display: block;
+	width: 0.26rem;
+	height: 0.26rem;
+    background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+}
+.shufang-info-block .shufang-info-block-shebei div .dianshi{
+	background-position: -2.4rem -1.85rem;
+}
+.shufang-info-block .shufang-info-block-shebei div .kongtiao{
+	background-position: -2.4rem -0.41rem;
+}
+.shufang-info-block .shufang-info-block-shebei div .kezhuo{
+	background-position: -2.4rem -0.41rem;
+}
+.shufang-info-block .shufang-info-block-shebei div .yizi{
+	background-position: -2.4rem -0.05rem;
+}
+.shufang-info-block .shufang-info-block-shebei div .baiban{
+	background-position: -1.85rem -1.86rem;
+}
+.shufang-info-block .shufang-info-block-shebei div .touying{
+	background-position: -0.05rem -2.22rem;
+}
+.shufang-info-block .shufang-info-block-shebei div .guizi{
+	background-position: -2.4rem -1.13rem;
+}
+.shufang-info-block .shufang-info-block-shebei div .jingzi{
+	background-position: -1.49rem -1.86rem;
+}
+
