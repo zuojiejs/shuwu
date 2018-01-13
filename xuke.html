@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/weui.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>超级书房</title>
+    <script src="./js/flexible.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="xuke-head">
+            <div class="xuke-head-year">
+                2017年
+            </div>
+            <div class="xuke-head-month">
+                12月
+            </div>
+            <div class="xuke-head-type">
+                假期选择
+            </div>
+            <p>返回今天</p>
+        </div>
+        <div class="xuke-week">
+            <span>一</span>
+            <span>二</span>
+            <span>三</span>
+            <span>四</span>
+            <span>五</span>
+            <span>六</span>
+            <span>日</span>
+        </div>
+        <!-- 
+            置灰添加类gray;
+            激活添加类on
+            多个激活使用div包起来，该div添加类xuke-days-list-on，注意，换行的日期不可连在一起激活
+            休息添加类xiu
+        -->
+        <div class="xuke-days">
+            <div class="xuke-days-item gray">27</div>
+            <div class="xuke-days-item gray">28</div>
+            <div class="xuke-days-item gray">29<span>课</span></div>
+            <div class="xuke-days-item gray">30<span>课</span></div>
+            <div class="xuke-days-item today">今天</div>
+            <div class="xuke-days-item">2</div>
+            <div class="xuke-days-item">3</div>
+            <div class="xuke-days-item">4</div>
+            <div class="xuke-days-item">5</div>
+            <div class="xuke-days-item on">6<span>课</span></div>
+            <div class="xuke-days-item">7</div>
+            <div class="xuke-days-item">8</div>
+            <div class="xuke-days-item">9</div>
+            <div class="xuke-days-item">10</div>
+            <div class="xuke-days-item">11</div>
+            <div class="xuke-days-item">12</div>
+            <div class="xuke-days-item">13</div>
+            <div class="xuke-days-list-on">
+                <div class="xuke-days-item">14<span>课</span></div>
+                <div class="xuke-days-item">15<span>课</span></div>
+            </div>
+            <div class="xuke-days-item">16</div>
+            <div class="xuke-days-item">17</div>
+            <div class="xuke-days-item">18</div>
+            <div class="xuke-days-item">19</div>
+            <div class="xuke-days-item">20</div>
+            <div class="xuke-days-item">21</div>
+            <div class="xuke-days-item">22</div>
+            <div class="xuke-days-item">23</div>
+            <div class="xuke-days-item">24</div>
+            <div class="xuke-days-item">25</div>
+            <div class="xuke-days-item">26</div>
+            <div class="xuke-days-item">27</div>
+            <div class="xuke-days-list-on">
+                <div class="xuke-days-item">28<span>课</span></div>
+                <div class="xuke-days-item on">29<span>课</span></div>
+            </div>
+            <div class="xuke-days-item xiu">30</div>
+            <div class="xuke-days-item xiu">31</div>
+        </div>
+        <div class="xuke-info">
+            <div class="xuke-info-title">美术鉴赏课</div>
+            <div class="xuke-info-desc">
+                上课时间：15:00-16:00<br>
+                上课人数：6人<br>
+                上课地点：香山美墅疏远（南山区华侨城香山美墅A栋
+                301室）
+            </div>
+            <div class="xuke-info-line"></div>
+            <div class="xuke-info-desc">
+                课程教师：Noah<br>
+                联系方式：135 3893 3499<br>
+                微信：132 3878 3284
+            </div>
+        </div>
+        <div class="foot">
+            <!-- foot-item激活态添加类on -->
+            <div class="foot-item">
+                <i></i>
+                <span>书房</span>
+            </div>
+            <div class="foot-item">
+                <i></i>
+                <span>课程</span>
+            </div>
+            <div class="foot-item">
+                <i></i>
+                <span>我的</span>
+            </div>
+        </div>
+    </div>
+    <script src="./js/weui.min.js"></script>
+    <script src="./js/zepto.min.js"></script>
+    <script>
+        $('.xuke-head-year').bind("click", function(){
+            weui.picker([
+                {
+                    label: '2016年',
+                    value: 0,
+                },
+                {
+                    label: '2017年',
+                    value: 1
+                },
+                {
+                    label: '2018年',
+                    value: 3
+                }
+            ], {
+                className: 'custom-classname',
+                container: 'body',
+                defaultValue: [1],
+                onChange: function (result) {
+                    // console.log(result)
+                },
+                onConfirm: function (result) {
+                    $('.xuke-head-year').html(result[0].label);
+                },
+                id: 'yearPicker'
+            });
+        });
+        $('.xuke-head-month').bind("click", function(){
+            weui.picker([
+                {
+                    label: '1月',
+                    value: 0,
+                },
+                {
+                    label: '2月',
+                    value: 1
+                },
+                {
+                    label: '3月',
+                    value: 2
+                },
+                {
+                    label: '4月',
+                    value: 3
+                },
+                {
+                    label: '5月',
+                    value: 4
+                },
+                {
+                    label: '6月',
+                    value: 5
+                },
+                {
+                    label: '7月',
+                    value: 6
+                },
+                {
+                    label: '8月',
+                    value: 7
+                },
+                {
+                    label: '9月',
+                    value: 8
+                },
+                {
+                    label: '10月',
+                    value: 9
+                },
+                {
+                    label: '11月',
+                    value: 10
+                },
+                {
+                    label: '12月',
+                    value: 11
+                }
+            ], {
+                className: 'custom-classname',
+                container: 'body',
+                defaultValue: [11],
+                onChange: function (result) {
+                    // console.log(result)
+                },
+                onConfirm: function (result) {
+                    $('.xuke-head-month').html(result[0].label);
+                },
+                id: 'monthPicker'
+            });
+        });
+        $('.xuke-head-type').bind("click", function(){
+            weui.picker([
+                {
+                    label: '假期选择',
+                    value: 0,
+                },
+                {
+                    label: '假期选择2',
+                    value: 1
+                },
+                {
+                    label: '假期选择3',
+                    value: 3
+                }
+            ], {
+                className: 'custom-classname',
+                container: 'body',
+                defaultValue: [0],
+                onChange: function (result) {
+                    // console.log(result)
+                },
+                onConfirm: function (result) {
+                    $('.xuke-head-type').html(result[0].label);
+                },
+                id: 'typePicker'
+            });
+        });
+    </script>
+</body>
+</html>

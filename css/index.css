@@ -115,6 +115,9 @@ a, a:active, a:hover, a:visited{
 	background: white;
 	opacity: 1;
 }   
+.weui-picker__action{
+	color: #EF821E;
+}
 .foot-btn{
 	position: fixed;
 	left: 0;
@@ -410,6 +413,9 @@ a, a:active, a:hover, a:visited{
     line-height: 0.4rem;
     text-align: center;
 }
+.login-btn:active{
+	background: #C4650E;
+}
 .login-foot{
     margin-top: 1.4rem;
 }
@@ -511,7 +517,13 @@ a, a:active, a:hover, a:visited{
 	line-height: 0.34rem;
 	text-align: center;
 }
+.yzm a:active{
+	background: #C4650E;
+}
 .yzm .disabled{
+	background: #A9A9A9;
+}
+.yzm .disabled:active{
 	background: #A9A9A9;
 }
 /* 申请体验课程 */
@@ -572,6 +584,10 @@ a, a:active, a:hover, a:visited{
 	font-size: 0.14rem;;
 	color: #EF821E;
 	text-align: center;
+}
+.apply-back:active{
+	border: 1px solid #C4650E;
+	color: #C4650E;
 }
 /* 我的 */
 .my-head{
@@ -791,6 +807,10 @@ a, a:active, a:hover, a:visited{
     border: 1px solid #EF821E;
     color: #EF821E;
     margin-right: 0.2rem;
+}
+.buy-success-btn .back:active{
+    border: 1px solid #C4650E;
+    color: #EF821E;
 }
 .buy-success-btn .share{
     background: #EF821E;
@@ -1364,4 +1384,149 @@ a, a:active, a:hover, a:visited{
 .shufang-info-block .shufang-info-block-shebei div .jingzi{
 	background-position: -1.49rem -1.86rem;
 }
-
+/* 已经续课 */
+.xuke-head{
+	height: 0.5rem;
+	width: 100%;
+	border-bottom: 1px solid #EF821E;
+}
+.xuke-head div{
+	position: relative;
+	height: 100%;
+	float: left;
+	text-align: right;
+	font-size: 0.14rem;
+	color: #4B4B4B;
+	line-height: 0.5rem;
+	padding-right: 0.2rem;
+	box-sizing:border-box;
+}
+.xuke-head div:after{
+	position: absolute;
+	display: block;
+	content: '';
+	width: 0.09rem;
+	height: 0.07rem;
+	top: 0.22rem;
+	right: 0;
+	background: url(../img/triangle.png);
+	background-size: 0.09rem 0.07rem;
+}
+.xuke-head .xuke-head-year{
+	width: 0.9rem;
+}
+.xuke-head .xuke-head-month{
+	width: 0.82rem;
+}
+.xuke-head .xuke-head-type{
+	width: 0.98rem;
+}
+.xuke-head p{
+	float: right;
+	display: inline-block;
+	margin-right: 0.2rem;
+	height: 0.5rem;
+	font-size: 0.12rem;
+	color: #EF821E;
+	line-height: 0.5rem;
+}
+.xuke-week{
+	height: 0.33rem;
+	font-size: 0.12rem;
+	line-height: 0.33rem;
+	color: #4B4B4B;
+	text-align: center;
+	border-bottom: 1px solid #F1F1F1;
+}
+.xuke-week span{
+	float: left;
+	display: block;
+	height: 0.33rem;
+	width: 0.5357rem;
+}
+.xuke-week span:nth-child(6),.xuke-week span:nth-child(7){
+	color: #EF2727;
+}
+.xuke-days{
+	width: 100%;
+	padding-bottom: 0.05rem;
+	overflow: hidden;
+	background: white;
+}
+.xuke-days::after{
+	clear: both;
+}
+.xuke-days .xuke-days-item{
+	position: relative;
+	float: left;
+	width: 0.37rem;
+	height: 0.37rem;
+	font-size: 0.12rem;
+	color: #4B4B4B;
+	text-align: center;
+	margin: 0 0.08285rem;
+	margin-bottom: 0.03rem;
+	padding-top: 0.06rem;
+	box-sizing:border-box;
+}
+.xuke-days .xuke-days-item span{
+	display: block;
+	font-size: 0.08rem;
+	margin-top: -0.05rem;
+}
+.xuke-days .gray{
+	color: #8C8C8C;
+}
+.xuke-days .today{
+	color: #EF8727;
+}
+.xuke-days .on{
+	background: #EF821E;
+	border-radius: 100%;
+	color: white!important;
+}
+.xuke-days .xiu:after{
+	position: absolute;
+	content: '';
+	top: -0.03rem;
+	left: -0.03rem;
+	display: block;
+	height: 0.21rem;
+	width: 0.2rem;
+    background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+	background-position: -0.36rem -2.58rem;
+}
+.xuke-days .xuke-days-list-on{
+	float: left;
+	height: 0.37rem;
+	background: #EF821E;
+	border-radius: 0.37rem;
+	overflow: hidden;
+	margin: 0 -0.001rem;
+}
+.xuke-days .xuke-days-list-on .xuke-days-item{
+	color: white!important;
+}
+.xuke-days .xuke-days-list-on:after{
+	clear: both;
+}
+.xuke-info{
+	width: 3.35rem;
+	margin: 0 auto;
+	margin-top: 0.18rem;
+	font-size: 0.14rem;
+	line-height: 0.18rem;
+}
+.xuke-info .xuke-info-title{
+	color: #EF821E;
+	margin-bottom: 0.17rem;
+}
+.xuke-info .xuke-info-desc{
+	color: #4B4B4B;
+}
+.xuke-info .xuke-info-line{
+	height: 1px;
+	background: #F1F1F1;
+	margin: 0.15rem 0;
+}
