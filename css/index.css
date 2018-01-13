@@ -72,6 +72,7 @@ a, a:active, a:hover, a:visited{
 	height: 2rem;
 }
 .swiper-slide{
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -90,6 +91,18 @@ a, a:active, a:hover, a:visited{
 	height: 100%;
 	width: 100%;
 }
+.swiper-slide i{
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	width:0.4rem;
+	height: 0.4rem;
+	background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+	background-position: -0.75rem -1.16rem;
+
+}
 .swiper-pagination-bullet{
 	width: 0.1rem;
 	height: 0.1rem;
@@ -101,8 +114,196 @@ a, a:active, a:hover, a:visited{
 .swiper-pagination-bullet-active{
 	background: white;
 	opacity: 1;
-}    
+}   
+.foot-btn{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 0.5rem;
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 0.18rem;
+	line-height: 0.5rem;
+	z-index: 999;
+	text-align: center;
+} 
+.foot-btn .foot-btn-btn1{
+	display: block;
+	float: left;
+	height: 100%;
+	width: 100%;
+	background: #EF821E;
+}
+.foot-btn2 .foot-btn-btn1{
+	width: 2.5rem;
+}
+.foot-btn2 .foot-btn-btn2{
+	display: block;
+	float: left;
+	height: 100%;
+	width: 1.25rem;
+	background: #434450;
+}
+.common-title{
+	position: relative;
+	height: 0.65rem;
+	width: 3.35rem;
+	margin: 0 auto;
+	border-bottom: 1px solid #F1F1F1;
+}
+.common-title span{
+	display: block;
+	float: left;
+	height: 100%;
+	line-height: 0.65rem;
+	font-size: 0.18rem;
+	color: #232323;
+}
+.common-title i{
+	position: absolute;
+	display: block;
+	right: 0;
+	top: 0.23rem;
+	width:0.2rem;
+	height: 0.18rem;
+	background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+	background-position: -0.66rem -2.58rem;
+}
+.common-title p{
+	display: block;
+	float: right;
+	height: 100%;
+	line-height: 0.65rem;
+	font-size: 0.12rem;
+	color: #EF821E;
 
+}
+.common-title .red{
+	background-position: -0.96rem -2.58rem;
+}
+.common-info-line{
+	width: 3.35rem;
+	margin: 0 auto;
+	margin-top: 0.25rem;
+	overflow: hidden;
+}
+.common-info-line:after{
+	clear: both;
+}
+.common-info-line .common-info-line-item{
+	width: 1.57rem;
+}
+.common-info-line .common-info-line-item:first-child{
+	float: left;
+}
+.common-info-line .common-info-line-item:last-child{
+	float: right;
+}
+.common-info-line .common-info-line-item span{
+	display: block;
+	height: 0.18rem;
+	font-size: 0.12rem;
+	color: #A9A9A9;
+	line-height: 0.18rem;
+}
+.common-info-line .common-info-line-item label{
+	display: inline-block;
+	height: 0.24rem;
+	margin-top: 0.06rem;
+	margin-right: 0.2rem;
+}
+.common-info-line .common-info-line-item label input{
+	display: none;
+}
+.common-info-line .common-info-line-item label input:checked+i{
+	background-position: -2.76rem -2.35rem;
+}
+.common-info-line .common-info-line-item label i{
+	display: block;
+	float: left;
+	height: 0.12rem;
+	width: 0.12rem;
+	margin-top: 0.06rem;
+	background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+	background-position: -1.96rem -1.63rem;
+}
+.common-info-line .common-info-line-item label p{
+	float: left;
+	width: 0.3rem;
+	margin-top: 0;
+	margin-left: 0.06rem;
+}
+.common-info-line .common-info-line-item p{
+	min-height: 0.24rem;
+	width: 1.57rem;
+	margin-top: 0.06rem;
+	font-size: 0.14rem;
+	color: #4B4B4B;
+	line-height: 0.24rem;
+}
+.common-info-line .common-info-line-item .common-info-line-item-num{
+	display: inline-block;
+	height: 0.24rem;
+	margin-top: 0.06rem;
+	border: 1px solid #C4C4C4;
+	line-height: 0.24rem;
+	text-align: center;
+}
+.common-info-line .common-info-line-item .common-info-line-item-num .common-info-line-item-num-sub{
+	float: left;
+	height: 0.24rem;
+	width: 0.24rem;
+	color: #EF821E;
+	font-size: 0.18rem;
+	border-right: 1px solid #C4C4C4;
+}
+.common-info-line .common-info-line-item .common-info-line-item-num .common-info-line-item-num-add{
+	float: left;
+	height: 0.24rem;
+	width: 0.24rem;
+	color: #EF821E;
+	font-size: 0.18rem;
+	border-left: 1px solid #C4C4C4;
+}
+.common-info-line .common-info-line-item .common-info-line-item-num .common-info-line-item-num-value{
+	float: left;
+	display: block;
+	width: 0.3rem;
+	height: 100%;
+	height: 0.22rem;
+	color: #4B4B4B;
+	font-size: 0.14rem;
+	border: 0;
+	text-align: center;
+}
+.common-info-line2 .common-info-line-item{
+	width: 100%;
+}
+.common-info-line2 .common-info-line-item p{
+	position: relative;
+	width: 3rem;
+}
+.common-info-line2 .common-info-line-item p i{
+	position: absolute;
+	display: block;
+	right: -0.35rem;
+	top: 0.08rem;
+	width: 0.12rem;
+	height:0.08rem;
+	background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+	background-position: -1.69rem -1.42rem;
+}
+.common-info-line .common-info-line-item .common-info-line-item-tell{
+	font-size: 0.16rem;
+	color: #EF821E;
+	min-height: 0.24rem;
+	width: 100%;;
+	margin-top: 0.06rem;
+	line-height: 0.24rem;
+}
 /* 登陆页 */
 .login-content{
     margin-bottom: 0.2rem;
@@ -944,3 +1145,4 @@ a, a:active, a:hover, a:visited{
 .shufang-detail-list-item-detail .disabled:active{
 	background: #999999;
 }
+/* 书房介绍页 */

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>超级书房</title>
+    <script src="./js/flexible.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <i></i>
+                    <img src="./img/banner.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner.png">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="common-title">
+            <span>天安书房</span>
+            <!-- 爱心变红添加类red -->
+            <i class="red"></i>
+        </div>
+        <div class="common-info-line common-info-line2">
+            <div class="common-info-line-item">
+                <span>书院名称</span>
+                <p>香山美墅书院</p>
+            </div>
+        </div>
+        <div class="common-info-line">
+            <div class="common-info-line-item">
+                <span>课程数量</span>
+                <label>
+                    <input type="radio" name="num" checked>
+                    <i></i>
+                    <p>单次</p>
+                </label>
+                <label>
+                    <input type="radio" name="num">
+                    <i></i>
+                    <p>整期</p>
+                </label>
+            </div>
+            <div class="common-info-line-item">
+                <span>上课时间</span>
+                <p>12.31 15:00-16:00</p>
+            </div>
+        </div>
+        <div class="common-info-line common-info-line2">
+            <div class="common-info-line-item">
+                <span>课程地点</span>
+                <p>深圳市南山区科技园南区R2-B三楼</p>
+            </div>
+        </div>
+        <div class="common-info-line common-info-line2">
+            <div class="common-info-line-item">
+                <span>购买份数</span>
+                <div class="common-info-line-item-num">
+                    <div class="common-info-line-item-num-sub">
+                        －
+                    </div>
+                    <input class="common-info-line-item-num-value" value="3"/>
+                    <div class="common-info-line-item-num-add">
+                        ＋
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot-btn">
+            <a class="foot-btn-btn1">共计¥78.00  立即约课</a>
+        </div>
+    </div>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 3000
+            }
+        });
+        $('.common-info-line-item-num-sub, .common-info-line-item-num-add').bind('click', function(){
+            var value = parseInt($('.common-info-line-item-num-value').attr('value'), 10);
+            if($(this).hasClass('common-info-line-item-num-sub')){
+                value > 0 && $('.common-info-line-item-num-value').attr('value', value - 1);
+            }else{
+                $('.common-info-line-item-num-value').attr('value', value + 1);
+            }
+        })
+    </script>
+</body>
+</html>

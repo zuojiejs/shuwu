@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>超级书房</title>
+    <script src="./js/flexible.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/banner.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner.png">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="common-title">
+            <span>天安书房</span>
+            <!-- 爱心变红添加类red -->
+            <i class="red"></i>
+        </div>
+        <div class="foot-btn">
+            <a class="foot-btn-btn1">邀请朋友</a>
+        </div>
+    </div>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 3000
+            }
+        });
+    </script>
+</body>
+</html>
