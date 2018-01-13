@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>超级书房</title>
+    <script src="./js/flexible.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <i></i>
+                    <img src="./img/banner.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner.png">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="common-title">
+            <span>甜心宝贝手工课</span>
+            <!-- 爱心变红添加类red -->
+            <i class="red"></i>
+        </div>
+        <div class="course-info-block">
+            <div class="course-info-block-title">
+                <i class="jigou"></i>
+                机构简介
+            </div>
+            <div class="course-info-block-desc">
+                2016年，成长为日语直播教学领域的佼佼者。
+                <br>
+                <br>
+                2017年4月，早道网校注册学员数突破300万，韩语网校、德语网校陆续上线，正式升级为多语种在线学习平台。
+            </div>
+        </div>
+        <div class="course-info-block">
+            <div class="course-info-block-title">
+                <i class="course"></i>
+                课程介绍
+            </div>
+            <div class="course-info-block-desc">
+                <p>绘画提高班</p>
+                《灌篮高手》、《海贼王》、《火影忍者》、《犬夜叉》……这一个个名字，相信是每个日语爱好者心中“动漫圣经”一样的存在。 “兴趣是最好的老师”，看动漫学日语早就被千万动漫迷们证明是一条行之有效的日语启蒙道路!
+            </div>
+        </div>
+        <div class="course-info-block course-info-block-last">
+            <div class="course-info-block-title">
+                <i class="guize"></i>
+                规则介绍
+            </div>
+            <div class="course-info-block-item">
+                <div class="course-info-block-item-title">
+                    <div>人数</div>
+                    <div>课程时长</div>
+                    <div>单次课程费用</div>
+                    <div>试课次数</div>
+                </div>
+                <div class="course-info-block-item-value">
+                    <div>2-10人</div>
+                    <div>2h</div>
+                    <div>1</div>
+                    <div>0</div>
+                </div>  
+            </div>
+            <div class="course-info-block-item">
+                <div class="course-info-block-item-title">
+                    <div>补课</div>
+                    <div>学员年龄</div>
+                    <div>总课时费用</div>
+                    <div>退款申请</div>
+                </div>
+                <div class="course-info-block-item-value">
+                    <div>10-20岁</div>
+                    <div>¥293</div>
+                    <div>¥8800</div>
+                    <div>¥200</div>
+                </div>  
+            </div>
+        </div>
+        <div class="foot-btn foot-btn">
+            <a class="foot-btn-btn1">邀请朋友</a>
+        </div>
+    </div>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 3000
+            }
+        });
+    </script>
+</body>
+</html>

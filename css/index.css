@@ -1145,4 +1145,94 @@ a, a:active, a:hover, a:visited{
 .shufang-detail-list-item-detail .disabled:active{
 	background: #999999;
 }
-/* 书房介绍页 */
+/* 课程介绍页 */
+.course-info-block{
+	width: 3.35rem;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+	border-bottom: 1px solid #F1F1F1;
+	overflow: hidden;
+}
+.course-info-block::after{
+	clear: both;
+}
+.course-info-block-last{
+	border: 0;
+}
+.course-info-block .course-info-block-title{
+	position: relative;
+	height: 0.22rem;
+	font-size: 0.16rem;
+	color: #232323;
+	padding-left: 0.26rem;
+}
+.course-info-block .course-info-block-title i{
+	position: absolute;
+	display: block;
+	top: -0.03rem;
+	left: -0.06rem;
+	width: 0.28rem;
+	height: 0.28rem;
+    background: url(../img/icon_sprites.png);
+	background-size: 3.06rem 2.84rem;
+}
+.course-info-block .course-info-block-title .jigou{
+    background-position: -1.96rem -0.87rem;
+}
+.course-info-block .course-info-block-title .course{
+	height: 0.14rem;
+	width: 0.16rem;
+	top: 0.04rem;
+	left: 0;
+    background-position: -1.24rem -2.58rem;
+}
+.course-info-block .course-info-block-title .guize{
+	height: 0.16rem;
+	width: 0.16rem;
+	top: 0.03rem;
+	left: 0;
+    background-position: -1.69rem -1.16rem;
+}
+.course-info-block .course-info-block-desc{
+	width: 100%;
+	font-size: 0.12rem;
+	color: #4B4B4B;
+	line-height: 0.18rem;
+	opacity: 0.7;
+	margin: 0.2rem 0;
+}
+.course-info-block .course-info-block-desc p{
+	color: #EF821E;
+	opacity: 1;
+	margin-bottom: 0.06rem;
+}
+.course-info-block .course-info-block-item{
+	display: inline-block;
+	opacity: 0.7;
+	font-size: 0.12rem;
+	color: #4B4B4B;
+	line-height: 0.24rem;
+	overflow: hidden;
+}
+.course-info-block .course-info-block-item::after{
+	clear: both;
+}
+.course-info-block .course-info-block-item:first-child{
+	float: left;
+}
+.course-info-block .course-info-block-item:last-child{
+	float: right;
+}
+.course-info-block .course-info-block-item .course-info-block-item-title{
+	float: left;
+}
+.course-info-block .course-info-block-item .course-info-block-item-title div{
+	height: 0.24rem;
+}
+.course-info-block .course-info-block-item .course-info-block-item-value{
+	float: left;
+	margin-left: 0.2rem;
+}
+.course-info-block .course-info-block-item .course-info-block-item-value div{
+	height: 0.24rem;
+}
