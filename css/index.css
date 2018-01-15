@@ -403,6 +403,9 @@ a, a:active, a:hover, a:visited{
     display: block;
     float: right;
 }
+.login-a a:active{
+    color: #C4650E;
+}
 .login-btn{
     display: block;
     height: 0.4rem;
@@ -483,6 +486,9 @@ a, a:active, a:hover, a:visited{
     float: left;
     height: 100%;
     line-height: 0.18rem;
+}
+.login-foot .login-foot-a a:active{
+    color: #C4650E;
 }
 .login-foot .login-foot-a span{
     display: block;
@@ -1140,6 +1146,9 @@ a, a:active, a:hover, a:visited{
 	margin: 0;
 	margin-left: 0.07rem;
 	color: #EF821E;
+}
+.shufang-detail-list .shufang-detail-list-item-detail .shufang-detail-list-item-detail-invite span:active{
+    color: #C4650E;
 }
 .shufang-detail-list .shufang-detail-list-item-detail .shufang-detail-list-item-detail-money{
 	font-size: 0.18rem;
