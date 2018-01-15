@@ -65,7 +65,7 @@ a, a:active, a:hover, a:visited{
 	background-position: -1.48rem -2.22rem;
 }
 .foot .on:nth-child(3) i{
-	background-position: -1.48rem -2.22rem;
+	background-position: -2.18rem -2.22rem;
 }
 .swiper-container{
 	width: 100%;
@@ -417,7 +417,7 @@ a, a:active, a:hover, a:visited{
 	background: #C4650E;
 }
 .login-foot{
-    margin-top: 1.4rem;
+    margin-top: 0.87rem;
 }
 .login-foot p{
     height: 100%;
