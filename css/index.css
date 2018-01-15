@@ -118,6 +118,9 @@ a, a:active, a:hover, a:visited{
 .weui-picker__action{
 	color: #EF821E;
 }
+.weui-picker__item{
+    font-size: 0.24rem;
+}
 .foot-btn{
 	position: fixed;
 	left: 0;
