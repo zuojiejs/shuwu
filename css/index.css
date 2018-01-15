@@ -11,7 +11,7 @@ a, a:active, a:hover, a:visited{
 .wrap{
   	position: relative;
       width: 100%;
-      padding-bottom: 0.7rem;
+      /* padding-bottom: 0.7rem; */
 }
 .foot{
 	position: fixed;
@@ -20,7 +20,7 @@ a, a:active, a:hover, a:visited{
 	width: 100%;
 	height: 0.5rem;
 	background: #FFFFFF;
-    border-top: 0.5px solid #979797;
+    border-top: 1px solid #979797;
     z-index: 999;
 }
 .foot .foot-item{
@@ -104,8 +104,8 @@ a, a:active, a:hover, a:visited{
 
 }
 .swiper-pagination-bullet{
-	width: 0.1rem;
-	height: 0.1rem;
+	width: 0.08rem;
+	height: 0.08rem;
 	border-radius: 100%;
 	opacity: .3;
 	background: white;
@@ -119,7 +119,7 @@ a, a:active, a:hover, a:visited{
 	color: #EF821E;
 }
 .weui-picker__item{
-    font-size: 0.24rem;
+    font-size: 0.18rem;
 }
 .foot-btn{
 	position: fixed;
@@ -129,7 +129,7 @@ a, a:active, a:hover, a:visited{
 	width: 100%;
 	color: #FFFFFF;
 	font-size: 0.18rem;
-	line-height: 0.5rem;
+	line-height: 0.51rem;
 	z-index: 999;
 	text-align: center;
 } 
@@ -214,6 +214,7 @@ a, a:active, a:hover, a:visited{
 	height: 0.18rem;
 	font-size: 0.12rem;
 	color: #A9A9A9;
+	opacity: 0.7;
 	line-height: 0.18rem;
 }
 .common-info-line .common-info-line-item label{
@@ -233,7 +234,7 @@ a, a:active, a:hover, a:visited{
 	float: left;
 	height: 0.12rem;
 	width: 0.12rem;
-	margin-top: 0.06rem;
+	margin-top: 0.05rem;
 	background: url(../img/icon_sprites.png);
 	background-size: 3.06rem 2.84rem;
 	background-position: -1.96rem -1.63rem;
@@ -339,7 +340,7 @@ a, a:active, a:hover, a:visited{
 }
 /* 登陆页 */
 .login-content{
-    margin-bottom: 0.2rem;
+    /* margin-bottom: 0.2rem; */
 }
 .logo{
     width: 1rem;
@@ -366,9 +367,7 @@ a, a:active, a:hover, a:visited{
 .login-input input{
     height: 100%;
     width: 2.23rem;
-	opacity: 0.3;
     margin-left: 0.58rem;
-    opacity: 0.7;
     font-size: 0.14rem;
     color: #232323; 
     border: none;
@@ -416,8 +415,8 @@ a, a:active, a:hover, a:visited{
     margin-top: 0.4rem;
     font-size: 0.14rem;;
     color: #FFFFFF;
-    line-height: 0.4rem;
-    text-align: center;
+    line-height: 0.41rem;
+	text-align: center;
 }
 .login-btn:active{
 	background: #C4650E;
@@ -537,9 +536,8 @@ a, a:active, a:hover, a:visited{
 }
 /* 申请体验课程 */
 .apply_desc{
-	position: fixed;
-	bottom: 0.2rem;
-	left: 0.4rem;
+	margin-top: 1.4rem;
+	margin-left: 0.4rem;
 	width: 2.95rem;
 	opacity: 0.7;
 	font-size: 0.12rem;
@@ -551,13 +549,13 @@ a, a:active, a:hover, a:visited{
 .icon-ok{
 	margin-top:0.6rem;
 	margin-bottom: 0.2rem;
-	height: 0.6rem;
+	height: 0.61rem;
 	text-align: center;
 }
 .icon-ok i{
 	display: inline-block;
 	width: 0.6rem;
-	height: 0.6rem;
+	height: 0.61rem;
     background: url(../img/icon_sprites.png);
 	background-size: 3.06rem 2.84rem;
 	background-position: -0.05rem -1.16rem;
@@ -588,7 +586,7 @@ a, a:active, a:hover, a:visited{
 	width: 1.2rem;
 	border: 1px solid #EF821E;
 	border-radius: 1rem;
-	line-height: 0.4rem;
+	line-height: 0.41rem;
 	opacity: 0.7;
 	font-size: 0.14rem;;
 	color: #EF821E;
@@ -687,7 +685,7 @@ a, a:active, a:hover, a:visited{
 	display: block;
 	width: 0.12rem;
 	height: 0.08rem;
-	margin-top: 0.26rem;
+	margin-top: 0.24rem;
     background: url(../img/icon_sprites.png);
 	background-size: 3.06rem 2.84rem;
 	background-position: -1.69rem -1.42rem;
@@ -810,7 +808,7 @@ a, a:active, a:hover, a:visited{
     border-radius: 1rem;
     font-size: 0.14rem;
     text-align: center;
-    line-height: 0.4rem;
+    line-height: 0.41rem;
 }
 .buy-success-btn .back{
     border: 1px solid #EF821E;
@@ -1020,7 +1018,7 @@ a, a:active, a:hover, a:visited{
 	right: 0.12rem;
 	height: 0.28rem;
 	width: 0.76rem;
-	line-height: 0.28rem;
+	line-height: 0.29rem;
 	font-size: 0.14rem;
 	color: #FFFFFF;
 	background: #EF821E;
@@ -1073,6 +1071,7 @@ a, a:active, a:hover, a:visited{
 	line-height: 0.2rem;
 	font-size: 0.14rem;
 	color: #8C8C8C;
+	opacity: 0.7;
 	text-align: center;
 }
 .shufang-detail-week .on{
@@ -1125,6 +1124,7 @@ a, a:active, a:hover, a:visited{
 	font-size: 0.12rem;
 	color: #8C8C8C;
 	height: 0.24rem;
+	opacity: 0.7;
 	line-height: 0.24rem;
 }
 .shufang-detail-list .shufang-detail-list-item-detail .shufang-detail-list-item-detail-invite{
@@ -1136,7 +1136,7 @@ a, a:active, a:hover, a:visited{
 	float: left;
     width: 0.13rem;
 	height: 0.16rem;
-	margin-top: 0.04rem;
+	margin-top: 0.02rem;
     background: url(../img/icon_sprites.png);
 	background-size: 3.06rem 2.84rem;
     background-position: -2.53rem -2.22rem;
@@ -1168,7 +1168,7 @@ a, a:active, a:hover, a:visited{
     background-position: -0.66rem -2.58rem;
 }
 .shufang-detail-list-item-detail .red{
-	width: 0.18rem;
+	width: 0.19rem;
 	height: 0.16rem;
     background-position: -0.96rem -2.58rem;
 }
@@ -1188,7 +1188,7 @@ a, a:active, a:hover, a:visited{
 	right: -0.08rem;
 	height: 0.28rem;
 	width: 0.76rem;
-	line-height: 0.28rem;
+	line-height: 0.29rem;
 	font-size: 0.14rem;
 	color: #FFFFFF;
 	background: #EF821E;
@@ -1287,6 +1287,7 @@ a, a:active, a:hover, a:visited{
 }
 .course-info-block .course-info-block-item .course-info-block-item-title div{
 	height: 0.24rem;
+	opacity: 0.7;
 }
 .course-info-block .course-info-block-item .course-info-block-item-value{
 	float: left;
@@ -1369,8 +1370,13 @@ a, a:active, a:hover, a:visited{
 	display: block;
 	width: 0.26rem;
 	height: 0.26rem;
+	margin-left: -0.015rem;
     background: url(../img/icon_sprites.png);
 	background-size: 3.06rem 2.84rem;
+}
+.shufang-info-block .shufang-info-block-shebei div span{
+	display: block;
+	text-align: center;
 }
 .shufang-info-block .shufang-info-block-shebei div .dianshi{
 	background-position: -2.4rem -1.85rem;
