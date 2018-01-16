@@ -1462,6 +1462,16 @@ a, a:active, a:hover, a:visited {
     background-position: -1.69rem -1.16rem;
 }
 
+.course-info-block .course-info-block-title .tips {
+    height: 0.21rem;
+    width: 0.21rem;
+    top: 0.005rem;
+    left: 0;
+    background: url(../img/icon_sprites2.png);
+    background-size: 0.62rem 0.51rem;
+    background-position: -0.05rem -0.05rem;
+}
+
 .course-info-block .course-info-block-desc {
     width: 100%;
     font-size: 0.12rem;
@@ -1552,6 +1562,18 @@ a, a:active, a:hover, a:visited {
 
 .shufang-info-block .shufang-info-block-title .tell {
     background-position: -2.76rem -1.42rem;
+}
+
+.shufang-info-block .shufang-info-block-title .changdi {
+    background: url(../img/icon_sprites2.png);
+    background-size: 0.62rem 0.51rem;
+    background-position: -0.36rem -0.05rem;
+}
+
+.shufang-info-block .shufang-info-block-title .tips {
+    background: url(../img/icon_sprites2.png);
+    background-size: 0.62rem 0.51rem;
+    background-position: -0.05rem -0.05rem;
 }
 
 .shufang-info-block .shufang-info-block-title .info {
@@ -1675,8 +1697,9 @@ a, a:active, a:hover, a:visited {
     height: 0.07rem;
     top: 0.22rem;
     right: 0;
-    background: url(../img/triangle.png);
-    background-size: 0.09rem 0.07rem;
+    background: url(../img/icon_sprites2.png);
+    background-size: 0.62rem 0.51rem;
+    background-position: -0.25rem -0.36rem;
 }
 
 .xuke-head .xuke-head-year {
