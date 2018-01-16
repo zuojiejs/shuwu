@@ -36,7 +36,7 @@ a, a:active, a:hover, a:visited{
 	margin: 0 auto;
 	margin-top: 0.06rem;
 	background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 }
 .foot .foot-item span{
 	display: block;
@@ -53,7 +53,7 @@ a, a:active, a:hover, a:visited{
 	background-position: -1.83rem -2.22rem;
 }
 .foot .foot-item:nth-child(3) i{
-	background-position: -2.76rem -0.05rem;
+	background-position: -1.13rem -2.22rem;
 }
 .foot .on span{
 	color: #EF821E;
@@ -99,7 +99,7 @@ a, a:active, a:hover, a:visited{
 	width:0.4rem;
 	height: 0.4rem;
 	background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 	background-position: -0.75rem -1.16rem;
 
 }
@@ -176,7 +176,7 @@ a, a:active, a:hover, a:visited{
 	width:0.2rem;
 	height: 0.18rem;
 	background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 	background-position: -0.66rem -2.58rem;
 }
 .common-title p{
@@ -236,7 +236,7 @@ a, a:active, a:hover, a:visited{
 	width: 0.12rem;
 	margin-top: 0.05rem;
 	background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 	background-position: -1.96rem -1.63rem;
 }
 .common-info-line .common-info-line-item label p{
@@ -278,7 +278,7 @@ a, a:active, a:hover, a:visited{
 	height: 0.26rem;
 	width: 0.26rem;
 	background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 	background-position: -1.13rem -1.86rem;
 }
 .common-info-line .common-info-line-item .common-info-line-item-num .common-info-line-item-num-add i{
@@ -289,7 +289,7 @@ a, a:active, a:hover, a:visited{
 	height: 0.26rem;
 	width: 0.26rem;
 	background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 	background-position: -0.77rem -1.86rem;	
 }
 .common-info-line .common-info-line-item .common-info-line-item-num .common-info-line-item-num-add{
@@ -327,7 +327,7 @@ a, a:active, a:hover, a:visited{
 	width: 0.12rem;
 	height:0.08rem;
 	background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 	background-position: -1.69rem -1.42rem;
 }
 .common-info-line .common-info-line-item .common-info-line-item-tell{
@@ -349,7 +349,7 @@ a, a:active, a:hover, a:visited{
     margin-top: 0.4rem;
     margin-bottom: 0.4rem;
     background: url(../img/icon_sprites.png);
-    background-size: 3.06rem 2.84rem;
+    background-size: 3.07rem 3.06rem;
     background-position: -0.05rem -0.05rem;
 }
 .login-input{
@@ -451,7 +451,7 @@ a, a:active, a:hover, a:visited{
     width: 0.34rem;
     height: 0.34rem;
     background: url(../img/icon_sprites.png);
-    background-size: 3.06rem 2.84rem;
+    background-size: 3.07rem 3.06rem;
 }
 .login-foot .login-foot-icon .login-foot-icon-wx{
     background-position: -1.25rem -1.16rem;
@@ -557,7 +557,7 @@ a, a:active, a:hover, a:visited{
 	width: 0.6rem;
 	height: 0.61rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 	background-position: -0.05rem -1.16rem;
 }
 .apply-success-desc{
@@ -647,7 +647,7 @@ a, a:active, a:hover, a:visited{
 	width: 0.12rem;
 	height: 0.08rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 	background-position: -2.18rem -1.63rem;
 	transform:rotate(-90deg);
 	-ms-transform:rotate(-90deg);
@@ -669,7 +669,7 @@ a, a:active, a:hover, a:visited{
 	margin-left: -0.06rem;
 	margin-top: 0.16rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 }
 .my-list-item .course{
 	background-position: -1.96rem -0.87rem;
@@ -687,7 +687,7 @@ a, a:active, a:hover, a:visited{
 	height: 0.08rem;
 	margin-top: 0.24rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 	background-position: -1.69rem -1.42rem;
 	transform:rotate(-90deg);
 	-ms-transform:rotate(-90deg);
@@ -836,7 +836,7 @@ a, a:active, a:hover, a:visited{
     width: 0.71rem;
     height: 0.62rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 	background-position: -1.15rem -0.05rem;
 }
 .no-wifi-text{
@@ -862,7 +862,7 @@ a, a:active, a:hover, a:visited{
     height: 0.23rem;
     width: 0.24rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 	background-position: -2.76rem -1.09rem;
 }
 .loading-content span{
@@ -967,7 +967,7 @@ a, a:active, a:hover, a:visited{
     width: 0.25rem;
     height: 0.28rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
     background-position: -1.53rem -0.77rem;
 }
 .shufang-nearby .shufang-nearby-item .red{
@@ -1138,7 +1138,7 @@ a, a:active, a:hover, a:visited{
 	height: 0.16rem;
 	margin-top: 0.02rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
     background-position: -2.53rem -2.22rem;
 }
 .shufang-detail-list .shufang-detail-list-item-detail .shufang-detail-list-item-detail-invite span{
@@ -1164,7 +1164,7 @@ a, a:active, a:hover, a:visited{
 	width: 0.2rem;
 	height: 0.18rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
     background-position: -0.66rem -2.58rem;
 }
 .shufang-detail-list-item-detail .red{
@@ -1179,7 +1179,7 @@ a, a:active, a:hover, a:visited{
 	width: 0.4rem;
 	height: 0.4rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
     background-position: -0.75rem -1.16rem;
 }
 .shufang-detail-list-item-detail .shufang-detail-list-item-detail-btn{
@@ -1233,7 +1233,7 @@ a, a:active, a:hover, a:visited{
 	width: 0.28rem;
 	height: 0.28rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 }
 .course-info-block .course-info-block-title .jigou{
     background-position: -1.96rem -0.87rem;
@@ -1319,7 +1319,7 @@ a, a:active, a:hover, a:visited{
 	width: 0.21rem;
 	height: 0.21rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 }
 .shufang-info-block .shufang-info-block-title .addr{
 	background-position: -2.76rem -1.73rem;
@@ -1372,7 +1372,7 @@ a, a:active, a:hover, a:visited{
 	height: 0.26rem;
 	margin-left: -0.015rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 }
 .shufang-info-block .shufang-info-block-shebei div span{
 	display: block;
@@ -1427,8 +1427,9 @@ a, a:active, a:hover, a:visited{
 	height: 0.07rem;
 	top: 0.22rem;
 	right: 0;
-	background: url(../img/triangle.png);
-	background-size: 0.09rem 0.07rem;
+    background: url(../img/icon_sprites.png);
+    background-size: 3.07rem 3.06rem;
+    background-position: -1rem -2.84rem;
 }
 .xuke-head .xuke-head-year{
 	width: 0.9rem;
@@ -1512,7 +1513,7 @@ a, a:active, a:hover, a:visited{
 	height: 0.21rem;
 	width: 0.2rem;
     background: url(../img/icon_sprites.png);
-	background-size: 3.06rem 2.84rem;
+	background-size: 3.07rem 3.06rem;
 	background-position: -0.36rem -2.58rem;
 }
 .xuke-days .xuke-days-list-on{
