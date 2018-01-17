@@ -5,8 +5,8 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/weui.min.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/weui.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>超级书房</title>
     <script src="./js/flexible.js"></script>
@@ -29,24 +29,42 @@
             <div class="swiper-pagination"></div>
         </div>
         <div class="common-title">
-            <span>牛肉汤体验课</span>
-            <p>已有1003人申请</p>
+            <span>天安书房</span>
+            <!-- 爱心变红添加类red -->
+            <i class="red"></i>
         </div>
         <div class="common-info-line common-info-line2">
-            <div class="common-info-line-item">
-                <span>书院名称</span>
-                <p id="name">香山美墅书院<i></i></p>
+                <div class="common-info-line-item">
+                    <span>书院名称</span>
+                    <p id="name">香山美墅书院<i></i></p>
+                </div>
             </div>
-        </div>
         <div class="common-info-line">
             <div class="common-info-line-item">
                 <span>课程数量</span>
                 <label>
-                    <input type="radio" name="num" checked>
+                    <input type="radio" name="num">
                     <i></i>
                     <p>单次</p>
                 </label>
+                <label>
+                    <input type="radio" name="num" checked>
+                    <i></i>
+                    <p>整期</p>
+                </label>
             </div>
+            <div class="common-info-line-item">
+                <span>上课时间</span>
+                <p id="time">12.31 15:00-16:00<i></i></p>
+            </div>
+        </div>
+        <div class="common-info-line common-info-line2">
+            <div class="common-info-line-item">
+                <span>课程地点</span>
+                <p>南山校区</p>
+            </div>
+        </div>
+        <div class="common-info-line common-info-line3">
             <div class="common-info-line-item">
                 <span>购买份数</span>
                 <div class="common-info-line-item-num">
@@ -60,18 +78,12 @@
                 </div>
             </div>
         </div>
-        <div class="common-info-line common-info-line2">
-            <div class="common-info-line-item">
-                <span>备注</span>
-                <p id="name">请与管理员联系，预约试课时间、地点</p>
-            </div>
-        </div>
         <div class="foot-btn">
-            <a class="foot-btn-btn1">共计¥1.00  立即约课</a>
+            <a class="foot-btn-btn1">共计¥78.00  立即约课</a>
         </div>
     </div>
-    <script src="./js/weui.min.js"></script>
     <script src="./js/zepto.min.js"></script>
+    <script src="./js/weui.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -82,6 +94,33 @@
             autoplay: {
                 delay: 3000
             }
+        });
+        $('#time').bind("click", function(){
+            weui.picker([
+                {
+                    label: '12:00-14:00',
+                    value: 0,
+                },
+                {
+                    label: '14:00-16:00',
+                    value: 1
+                },
+                {
+                    label: '16:00-18:00',
+                    value: 3
+                }
+            ], {
+                className: 'custom-classname',
+                container: 'body',
+                defaultValue: [1],
+                onChange: function (result) {
+                    // console.log(result)
+                },
+                onConfirm: function (result) {
+                    $('#time').html('12.31 ' + result[0].label + '<i></i>')
+                },
+                id: 'timePicker'
+            });
         });
         $('#name').bind("click", function(){
             weui.picker([

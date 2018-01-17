@@ -39,15 +39,7 @@
                 深圳市南山区科技园南区R2-B三楼
             </div>
         </div>
-        <div class="shufang-info-block">
-            <div class="shufang-info-block-title">
-                <i class="tell"></i>联系方式
-            </div>
-            <div class="shufang-info-block-tell">
-                0755 - 4985 3847
-            </div>
-        </div>
-        <div class="shufang-info-block">
+        <div class="shufang-info-block" style="padding-bottom: 0.1rem;margin-top: 0.25rem;">
             <div class="shufang-info-block-title">
                 <i class="changdi"></i>场地详情
             </div>
@@ -55,6 +47,19 @@
                 房间数：3间
                 <br>
                 面积：40平方米
+            </div>
+        </div>
+        <div class="shufang-info-line"></div>
+        <div class="shufang-info-tab">
+            <!-- 激活态添加类on -->
+            <div class="shufang-info-tab-item on"><span>房间一</span></div>
+            <div class="shufang-info-tab-item"><span>房间二</span></div>
+            <div class="shufang-info-tab-item"><span>房间三</span></div>
+        </div>
+        <div class="shufang-info-line" style="height: 0.02rem;"></div>
+        <div class="shufang-info-block" style="margin-top: 0.15rem;">
+            <div class="shufang-info-block-desc">
+                场地：40平方米
             </div>
         </div>
         <div class="shufang-info-block">
@@ -80,6 +85,7 @@
                 <div><i class="jingzi"></i><span>镜子</span></div>
             </div>
         </div>
+        <div class="shufang-info-line"></div>
         <div class="shufang-info-block">
             <div class="shufang-info-block-title">
                 <i class="tips"></i>风险提示
@@ -88,11 +94,13 @@
                 风险提示请注意...
             </div>
         </div>
-        <div class="foot-btn">
+        <div class="foot-btn foot-btn3">
             <a class="foot-btn-btn1">邀请朋友</a>
+            <a class="foot-btn-btn2">邀请朋友</a>
         </div>
     </div>
     <script src="./js/swiper.min.js"></script>
+    <script src="./js/zepto.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             pagination: {
@@ -103,6 +111,10 @@
                 delay: 3000
             }
         });
+        $('.shufang-info-tab').on('click', '.shufang-info-tab-item', function(){
+            $('.shufang-info-tab-item').removeClass('on');
+            $(this).addClass('on');
+        })
     </script>
 </body>
 </html>

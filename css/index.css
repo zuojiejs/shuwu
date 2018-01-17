@@ -165,7 +165,7 @@ a, a:active, a:hover, a:visited {
     background: #EF821E;
 }
 
-.foot-btn .foot-btn-btn1:active {
+.foot-btn-btn1:active {
     background: #C4650E;
 }
 
@@ -178,6 +178,17 @@ a, a:active, a:hover, a:visited {
     float: left;
     height: 100%;
     width: 1.25rem;
+    background: #434450;
+}
+.foot-btn3 .foot-btn-btn1 {
+    width: 50%;
+}
+
+.foot-btn3 .foot-btn-btn2 {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 50%;
     background: #434450;
 }
 
@@ -386,6 +397,20 @@ a, a:active, a:hover, a:visited {
     border: 0;
     text-align: center;
 }
+.common-info-line p{
+    position: relative;
+}
+.common-info-line p i{
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0.08rem;
+    width: 0.12rem;
+    height: 0.08rem;
+    background: url(../img/icon_sprites.png);
+    background-size: 3.06rem 2.84rem;
+    background-position: -1.69rem -1.42rem;  
+}
 
 .common-info-line2 .common-info-line-item {
     width: 100%;
@@ -406,6 +431,20 @@ a, a:active, a:hover, a:visited {
     background: url(../img/icon_sprites.png);
     background-size: 3.06rem 2.84rem;
     background-position: -1.69rem -1.42rem;
+}
+.common-info-line3 .common-info-line-item {
+    width: 100%;
+    overflow: hidden;
+}
+.common-info-line3 .common-info-line-item:after{
+    clear: both;
+}
+.common-info-line3 .common-info-line-item span{
+    float: left;
+}
+.common-info-line3 .common-info-line-item .common-info-line-item-num{
+    float: right;
+    margin-top: 0;
 }
 
 .common-info-line .common-info-line-item .common-info-line-item-tell {
@@ -1496,6 +1535,31 @@ a, a:active, a:hover, a:visited {
     background-size: 0.6615rem 0.5154rem;
     background-position: -0.0385rem -0.0385rem;
 }
+.course-info-block .course-info-block-title a{
+    position: relative;
+    display: block;
+    float: right;
+    font-size: 0.14rem;
+    color: #EF821E;
+    padding-right: 0.2rem;
+}
+.course-info-block .course-info-block-title a:after{
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0.06rem;
+    right: 0;
+    width: 0.12rem;
+    height: 0.08rem;
+    background: url(../img/icon_sprites.png);
+    background-size: 3.06rem 2.84rem;
+    background-position: -1.69rem -1.42rem;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
 
 .course-info-block .course-info-block-desc {
     width: 100%;
@@ -1541,6 +1605,11 @@ a, a:active, a:hover, a:visited {
     height: 0.24rem;
     opacity: 0.7;
 }
+.course-info-block .course-info-block-item .course-info-block-item-title div span{
+    font-size: 0.1rem;
+    color: #EF821E;
+    opacity: 1;
+}
 
 .course-info-block .course-info-block-item .course-info-block-item-value {
     float: left;
@@ -1550,6 +1619,33 @@ a, a:active, a:hover, a:visited {
 .course-info-block .course-info-block-item .course-info-block-item-value div {
     height: 0.24rem;
 }
+.course-info-course{
+    width: 3.75rem;
+    background:  #FFFAF7;
+    padding: 0.14rem 0;
+}
+.course-info-course .course-info-course-line{
+    height: 0.28rem;
+    width: 3.35rem;
+    font-size: 0.14rem;
+    color: #232323;
+    margin: 0.06rem auto;
+    line-height: 0.29rem;
+}
+.course-info-course .course-info-course-line a{
+    display: block;
+    float: right;
+    height: 0.28rem;
+    width: 0.76rem;
+    color: #EF821E;
+    text-align: center;
+    border: 1px solid #EF821E;
+    border-radius: 0.3rem;
+}
+.course-info-course .course-info-course-line a:active{
+    color: #C4650E;
+    border: 1px solid #C4650E;
+}
 
 /* 书房介绍页 */
 
@@ -1557,6 +1653,12 @@ a, a:active, a:hover, a:visited {
     width: 3.35rem;
     margin: 0 auto;
     margin-top: 0.2rem;
+}
+
+.shufang-info-line{
+    width: 3.75rem;
+    height: 0.1rem;
+    background: #FAFAFA;
 }
 
 .shufang-info-block .shufang-info-block-title {
@@ -1693,6 +1795,36 @@ a, a:active, a:hover, a:visited {
 .shufang-info-block .shufang-info-block-shebei div .jingzi {
     background-position: -1.49rem -1.86rem;
 }
+.shufang-info-tab{
+    height: 0.4rem;
+    line-height: 0.41rem;
+    font-size: 0.14rem;
+    color: #8C8C8C;
+}
+.shufang-info-tab .shufang-info-tab-item{
+    width: 1.25rem;
+    float: left;
+    height: 0.4rem;
+    text-align: center;
+}
+.shufang-info-tab .shufang-info-tab-item span{
+    position: relative;
+    display: inline-block;
+    width: 0.6rem;
+}
+.shufang-info-tab .on{
+    color: #EF821E;
+}
+.shufang-info-tab .on span:after{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 0.03rem;
+    width: 0.6rem;
+    background: #EF821E;
+}
 
 /* 已经续课 */
 
@@ -1700,6 +1832,7 @@ a, a:active, a:hover, a:visited {
     height: 0.5rem;
     width: 100%;
     border-bottom: 1px solid #EF821E;
+    background: white;
 }
 
 .xuke-head div {
@@ -1756,6 +1889,7 @@ a, a:active, a:hover, a:visited {
     color: #4B4B4B;
     text-align: center;
     border-bottom: 1px solid #F1F1F1;
+    background: white;
 }
 
 .xuke-week span {
@@ -1798,9 +1932,13 @@ a, a:active, a:hover, a:visited {
     display: block;
     font-size: 0.08rem;
     margin-top: -0.05rem;
+    color: #4DA802;
 }
 
 .xuke-days .gray {
+    color: #8C8C8C;
+}
+.xuke-days .gray span{
     color: #8C8C8C;
 }
 
@@ -1812,6 +1950,9 @@ a, a:active, a:hover, a:visited {
     background: #EF821E;
     border-radius: 100%;
     color: white!important;
+}
+.xuke-days .on span{
+    color: white;
 }
 
 .xuke-days .xiu:after {
@@ -1865,4 +2006,12 @@ a, a:active, a:hover, a:visited {
     height: 1px;
     background: #F1F1F1;
     margin: 0.15rem 0;
+}
+.xuke-null{
+    margin-top: 0.23rem;
+    text-align: center;
+    height: 0.2rem;
+    font-size: 0.14rem;
+    color: #4B4B4B;
+    line-height: 0.2rem;
 }
