@@ -1181,7 +1181,7 @@ a, a:active, a:hover, a:visited {
 
 .shufang-nearby .shufang-nearby-item {
     position: relative;
-    height: 2.5rem;
+    height: 2.8rem;
     margin-bottom: 0.15rem;
     border-radius: 0.08rem;
     z-index: 1;
@@ -1213,7 +1213,7 @@ a, a:active, a:hover, a:visited {
 
 .shufang-nearby .shufang-nearby-item .shufang-nearby-item-foot {
     position: relative;
-    height: 0.7rem;
+    height: 1rem;
     padding-left: 0.13rem;
     overflow: hidden;
     box-shadow: 0 0 0.1rem rgba(0, 0, 0, .5);
@@ -1227,6 +1227,14 @@ a, a:active, a:hover, a:visited {
     color: #232323;
     height: 0.2rem;
     margin-top: 0.14rem;
+    line-height: 0.2rem;
+}
+
+.shufang-nearby .shufang-nearby-item .shufang-nearby-item-foot .shufang-nearby-item-foot-course {
+    font-size: 0.14rem;
+    color: #EF821E;
+    height: 0.2rem;
+    margin-top: 0.08rem;
     line-height: 0.2rem;
 }
 
@@ -1290,14 +1298,30 @@ a, a:active, a:hover, a:visited {
 }
 
 .shufang-detail-head a {
+    position: relative;
     display: block;
     float: right;
+    width: 0.85rem;
     font-size: 0.14rem;
     color: #EF821E;
+    margin-right: -0.2rem;
 }
-
-.shufang-detail-head a:last-child {
-    margin-right: 0.2rem;
+.shufang-detail-head a:after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0.12rem;
+    height: 0.08rem;
+    right: 0.1rem;
+    top: 0.29rem;
+    background: url(../img/icon_sprites.png);
+    background-size: 3.06rem 2.84rem;
+    background-position: -1.69rem -1.42rem;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);   
 }
 
 .shufang-detail-week {
@@ -1524,6 +1548,16 @@ a, a:active, a:hover, a:visited {
     top: 0.03rem;
     left: 0;
     background-position: -1.69rem -1.16rem;
+}
+
+.course-info-block .course-info-block-title .teacher {
+    height: 0.26rem;
+    width: 0.26rem;
+    top: -0.02rem;
+    left: -0.05rem;
+    background: url(../img/icon_sprites3.png);
+    background-size: 0.72rem 0.36rem;
+    background-position: -0.41rem -0.05rem;
 }
 
 .course-info-block .course-info-block-title .tips {
@@ -1761,6 +1795,8 @@ a, a:active, a:hover, a:visited {
 
 .shufang-info-block .shufang-info-block-shebei div span {
     display: block;
+    width: 0.54rem;
+    margin-left: -0.15rem;
     text-align: center;
 }
 
@@ -1794,6 +1830,11 @@ a, a:active, a:hover, a:visited {
 
 .shufang-info-block .shufang-info-block-shebei div .jingzi {
     background-position: -1.49rem -1.86rem;
+}
+.shufang-info-block .shufang-info-block-shebei div .yujia {
+    background: url(../img/icon_sprites3.png);
+    background-size: 0.72rem 0.36rem;
+    background-position: -0.05rem -0.05rem;
 }
 .shufang-info-tab{
     height: 0.4rem;
@@ -2014,4 +2055,136 @@ a, a:active, a:hover, a:visited {
     font-size: 0.14rem;
     color: #4B4B4B;
     line-height: 0.2rem;
+}
+/* 资料修改 */
+.info-block{
+    width: 3.75rem;
+    padding-left: 0.2rem;
+    background: white;
+    overflow: hidden;
+}
+.info-block .info-face{
+    height: 0.68rem;
+    width: 3.55rem;
+    line-height: 0.68rem;
+    font-size: 0.15rem;
+    color: #232323;
+    border-bottom: 1px solid #F1F1F1;
+}
+.info-block .info-face .info-face-img{
+    position: relative;
+    float: right;
+    height: 0.54rem;
+    width: 0.54rem;
+    margin-right: 0.38rem;
+    margin-top: 0.07rem;
+    background: #E9E9E9;
+    border-radius: 0.54rem;
+}
+.info-block .info-face .info-face-img img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.54rem;
+}
+.info-block .info-face .info-face-img:after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0.12rem;
+    height: 0.08rem;
+    right: -0.18rem;
+    top: 0.235rem;
+    background: url(../img/icon_sprites.png);
+    background-size: 3.06rem 2.84rem;
+    background-position: -1.69rem -1.42rem;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);    
+}
+.info-block .info-block-line{
+    position: relative;
+    height: 0.5rem;
+    width: 3.55rem;
+    line-height: 0.5rem;
+    font-size: 0.15rem;
+    background: white;
+    border-bottom: 1px solid #F1F1F1;
+}
+.info-block .info-block-line:last-child{
+    border: 0;
+}
+.info-block .info-block-line span{
+    display: inline-block;
+    height: 0.5rem;
+}
+.info-block .info-block-line .info-block-line-title{
+    color: #A9A9A9;
+}
+.info-block .info-block-line .info-block-line-value{
+    float: right;
+    margin-right: 0.2rem;
+    color: #232323;
+}
+.info-block .info-block-line .info-block-line-item{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.info-block .info-block-line .info-block-line-item input{
+    height: 0.49rem;
+    width: 0.85rem;
+    margin-left: 0.25rem;
+    font-size: 0.14rem;
+    color: #232323;
+    border: none;
+}
+.info-user{
+    height: 0.5rem;
+    padding-left: 0.2rem;
+    background: inherit;
+    line-height: 0.5rem;
+    font-size: 0.15rem;
+    color: #EF821E;
+}
+.info-block .info-block-line2 .info-block-line-value{
+    margin-right: 0.4rem;
+}
+.info-block .info-block-line2 .gray{
+    color: #A9A9A9;
+}
+.info-block .info-block-line2:after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0.12rem;
+    height: 0.08rem;
+    right: 0.16rem;
+    top: 0.2rem;
+    background: url(../img/icon_sprites.png);
+    background-size: 3.06rem 2.84rem;
+    background-position: -1.69rem -1.42rem;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);  
+}
+.info-btn{
+    display: block;
+    height: 0.4rem;
+    width: 2.95rem;
+    margin: 0 auto;
+    margin-top: 0.22rem;
+    background: #EF821E;
+    border-radius: 1rem;
+    font-size: 0.14rem;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 0.41rem;
+}
+.info-btn:active{
+    background: #C4650E;
 }
