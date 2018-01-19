@@ -27,35 +27,15 @@
                 <span class="info-block-line-title">手机</span>
                 <span class="info-block-line-value">159 9388 3984</span>
             </div>
-        </div>
-        <div class="info-user">使用人</div>
-        <div class="info-block">
+            <!-- 如果用户名和手机号是可输入，用下面注释的结构 -->
+            <!-- <div class="info-block-line">
+                <span class="info-block-line-title">用户名</span>
+                <input class="info-block-line-input">
+            </div>
             <div class="info-block-line">
-                <div class="info-block-line-item">
-                    <span class="info-block-line-title">中文名</span>
-                    <input>
-                </div>
-                <div class="info-block-line-item">
-                    <span class="info-block-line-title">英文名</span>
-                    <input>
-                </div>
-            </div>
-            <div class="info-block-line info-block-line2" id="age">
-                <span class="info-block-line-title">年龄</span>
-                <span class="info-block-line-value">5岁</span>
-            </div>
-            <div class="info-block-line info-block-line2" id="sex">
-                <span class="info-block-line-title">性别</span>
-                <span class="info-block-line-value">女</span>
-            </div>
-            <div class="info-block-line info-block-line2" id="relation">
-                <span class="info-block-line-title">关系</span>
-                <span class="info-block-line-value">母女</span>
-            </div>
-            <div class="info-block-line info-block-line2" id="grade">
-                <span class="info-block-line-title">年级</span>
-                <span class="info-block-line-value gray">请选择年级</span>
-            </div>
+                <span class="info-block-line-title">手机</span>
+                <input class="info-block-line-input">
+            </div> -->
         </div>
         <a class="info-btn">完成</a>
     </div>
@@ -64,106 +44,6 @@
     <script>
         $('.info-face').bind('click', function(){
             //调用微信SDK选择照片
-        });
-        $('#age').bind("click", function(){
-            weui.picker([
-                {
-                    label: '5岁',
-                    value: 0,
-                },
-                {
-                    label: '6岁',
-                    value: 1
-                },
-                {
-                    label: '7岁',
-                    value: 3
-                }
-            ], {
-                className: 'custom-classname',
-                container: 'body',
-                defaultValue: [0],
-                onChange: function (result) {
-                    // console.log(result)
-                },
-                onConfirm: function (result) {
-                    $('#age .info-block-line-value').removeClass('gray').html(result[0].label);
-                },
-                id: 'agePicker'
-            });
-        });
-        $('#sex').bind("click", function(){
-            weui.picker([
-                {
-                    label: '男',
-                    value: 0,
-                },
-                {
-                    label: '女',
-                    value: 1
-                }
-            ], {
-                className: 'custom-classname',
-                container: 'body',
-                defaultValue: [0],
-                onChange: function (result) {
-                    // console.log(result)
-                },
-                onConfirm: function (result) {
-                    $('#sex .info-block-line-value').removeClass('gray').html(result[0].label);
-                },
-                id: 'sexPicker'
-            });
-        });
-        $('#relation').bind("click", function(){
-            weui.picker([
-                {
-                    label: '父子',
-                    value: 0,
-                },
-                {
-                    label: '母子',
-                    value: 1
-                }
-            ], {
-                className: 'custom-classname',
-                container: 'body',
-                defaultValue: [0],
-                onChange: function (result) {
-                    // console.log(result)
-                },
-                onConfirm: function (result) {
-                    $('#relation .info-block-line-value').removeClass('gray').html(result[0].label);
-                },
-                id: 'relationPicker'
-            });
-        });
-        $('#grade').bind("click", function(){
-            weui.picker([
-                {
-                    label: '一年级',
-                    value: 0,
-                },
-                {
-                    label: '二年级',
-                    value: 1
-                },
-                {
-                    label: '三年级',
-                    value: 3
-                }
-            ], {
-                className: 'custom-classname',
-                container: 'body',
-                defaultValue: [0],
-                onChange: function (result) {
-                    // console.log(result)
-                },
-                onConfirm: function (result) {
-                    $('#grade .info-block-line-value').removeClass('gray').html(result[0].label);
-                },
-                id: 'gradePicker'
-            });
         });
     </script>
 </body>

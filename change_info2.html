@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;background: #FAFAFA;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/weui.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>超级书房</title>
+    <script src="./js/flexible.js"></script>
+</head>
+<body ontouchstart="" onmouseover="" style="padding-bottom: 0.2rem;">
+    <div class="wrap">
+        <div class="info-user">
+            使用人(1)
+            <span class="add">添加使用人</span>
+        </div>
+        <div class="info-block">
+            <div class="info-block-line">
+                <div class="info-block-line-item">
+                    <span class="info-block-line-title">中文名</span>
+                    <input>
+                </div>
+                <div class="info-block-line-item">
+                    <span class="info-block-line-title">英文名</span>
+                    <input>
+                </div>
+            </div>
+            <div class="info-block-line info-block-line2" id="age">
+                <span class="info-block-line-title">年龄</span>
+                <span class="info-block-line-value">5岁</span>
+            </div>
+            <div class="info-block-line info-block-line2" id="sex">
+                <span class="info-block-line-title">性别</span>
+                <span class="info-block-line-value">女</span>
+            </div>
+            <div class="info-block-line info-block-line2" id="relation">
+                <span class="info-block-line-title">关系</span>
+                <span class="info-block-line-value">母女</span>
+            </div>
+            <div class="info-block-line info-block-line2" id="grade">
+                <span class="info-block-line-title">年级</span>
+                <span class="info-block-line-value gray">请选择年级</span>
+            </div>
+        </div>
+        <a class="info-btn">完成</a>
+    </div>
+    <script src="./js/weui.min.js"></script>
+    <script src="./js/zepto.min.js"></script>
+    <script>
+        $('#age').bind("click", function(){
+            weui.picker([
+                {
+                    label: '5岁',
+                    value: 0,
+                },
+                {
+                    label: '6岁',
+                    value: 1
+                },
+                {
+                    label: '7岁',
+                    value: 3
+                }
+            ], {
+                className: 'custom-classname',
+                container: 'body',
+                defaultValue: [0],
+                onChange: function (result) {
+                    // console.log(result)
+                },
+                onConfirm: function (result) {
+                    $('#age .info-block-line-value').removeClass('gray').html(result[0].label);
+                },
+                id: 'agePicker'
+            });
+        });
+        $('#sex').bind("click", function(){
+            weui.picker([
+                {
+                    label: '男',
+                    value: 0,
+                },
+                {
+                    label: '女',
+                    value: 1
+                }
+            ], {
+                className: 'custom-classname',
+                container: 'body',
+                defaultValue: [0],
+                onChange: function (result) {
+                    // console.log(result)
+                },
+                onConfirm: function (result) {
+                    $('#sex .info-block-line-value').removeClass('gray').html(result[0].label);
+                },
+                id: 'sexPicker'
+            });
+        });
+        $('#relation').bind("click", function(){
+            weui.picker([
+                {
+                    label: '父子',
+                    value: 0,
+                },
+                {
+                    label: '母子',
+                    value: 1
+                }
+            ], {
+                className: 'custom-classname',
+                container: 'body',
+                defaultValue: [0],
+                onChange: function (result) {
+                    // console.log(result)
+                },
+                onConfirm: function (result) {
+                    $('#relation .info-block-line-value').removeClass('gray').html(result[0].label);
+                },
+                id: 'relationPicker'
+            });
+        });
+        $('#grade').bind("click", function(){
+            weui.picker([
+                {
+                    label: '一年级',
+                    value: 0,
+                },
+                {
+                    label: '二年级',
+                    value: 1
+                },
+                {
+                    label: '三年级',
+                    value: 3
+                }
+            ], {
+                className: 'custom-classname',
+                container: 'body',
+                defaultValue: [0],
+                onChange: function (result) {
+                    // console.log(result)
+                },
+                onConfirm: function (result) {
+                    $('#grade .info-block-line-value').removeClass('gray').html(result[0].label);
+                },
+                id: 'gradePicker'
+            });
+        });
+    </script>
+</body>
+</html>

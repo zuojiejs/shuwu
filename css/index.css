@@ -830,6 +830,56 @@ a, a:active, a:hover, a:visited {
     -o-transform: rotate(-90deg);
 }
 
+.my-user{
+    width: 3.75rem;
+    background: #FAFAFA;
+    overflow: hidden;
+}
+.my-user:after{
+    clear: both;
+}
+.my-user .border{
+    border-bottom: 1px solid #F1F1F1;
+}
+.my-user .my-user-head{
+    height: 0.6rem;
+    width: 3.35rem;
+    margin: 0 auto;
+    background: white;
+    padding: 0 0.2rem;
+}
+.my-user .my-user-head .user{
+    display: block;
+    float: left;
+    height: 0.28rem;
+    width: 0.28rem;
+    margin-left: -0.06rem;
+    margin-top: 0.16rem;
+    background: url(../img/icon_sprites3.png);
+    background-size: 1rem 0.74rem;
+    background-position: -0.05rem -0.05rem;
+}
+.my-user .my-user-item{
+    height: 0.4rem;
+    width: 3.3rem;
+    float: right;
+    font-size: 0.14rem;
+    color: #A9A9A9;
+    line-height: 0.4rem;
+    border-bottom: 1px solid #F1F1F1;
+}
+.my-user .my-user-item:last-child{
+    border: 0;
+}
+.my-user .my-user-item p{
+    float: right;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    color: #EF821E;
+    text-align: right;
+    margin-right: 0.2rem;
+}
+
 .my-list-item {
     height: 0.6rem;
     width: 3.35rem;
@@ -860,12 +910,12 @@ a, a:active, a:hover, a:visited {
     background-position: -1.96rem -1.25rem;
 }
 
-.my-list-item .arr {
+.my-user .my-user-head .arr, .my-list-item .arr {
     float: right;
     display: block;
     width: 0.12rem;
     height: 0.08rem;
-    margin-top: 0.24rem;
+    margin-top: 0.25rem;
     background: url(../img/icon_sprites.png);
     background-size: 3.06rem 2.84rem;
     background-position: -1.69rem -1.42rem;
@@ -876,7 +926,7 @@ a, a:active, a:hover, a:visited {
     -o-transform: rotate(-90deg);
 }
 
-.my-list-item p {
+.my-user .my-user-head p, .my-list-item p {
     float: right;
     height: 0.6rem;
     margin-right: 0.15rem;
@@ -884,8 +934,11 @@ a, a:active, a:hover, a:visited {
     color: #EF821E;
     line-height: 0.6rem;
 }
+.my-user .my-user-head p{
+    margin-right: 0.09rem;
+}
 
-.my-list-item span {
+.my-user .my-user-head span, .my-list-item span {
     display: block;
     float: left;
     height: 0.6rem;
@@ -1556,8 +1609,8 @@ a, a:active, a:hover, a:visited {
     top: -0.02rem;
     left: -0.05rem;
     background: url(../img/icon_sprites3.png);
-    background-size: 0.72rem 0.36rem;
-    background-position: -0.41rem -0.05rem;
+    background-size: 1rem 0.74rem;
+    background-position: -0.43rem -0.05rem;
 }
 
 .course-info-block .course-info-block-title .tips {
@@ -1605,7 +1658,6 @@ a, a:active, a:hover, a:visited {
 }
 
 .course-info-block .course-info-block-desc p {
-    color: #EF821E;
     opacity: 1;
     margin-bottom: 0.06rem;
 }
@@ -1833,8 +1885,8 @@ a, a:active, a:hover, a:visited {
 }
 .shufang-info-block .shufang-info-block-shebei div .yujia {
     background: url(../img/icon_sprites3.png);
-    background-size: 0.72rem 0.36rem;
-    background-position: -0.05rem -0.05rem;
+    background-size: 1rem 0.74rem;
+    background-position: -0.05rem -0.43rem;
 }
 .shufang-info-tab{
     height: 0.4rem;
@@ -2141,13 +2193,52 @@ a, a:active, a:hover, a:visited {
     color: #232323;
     border: none;
 }
+.info-block .info-block-line .info-block-line-input{
+    display: block;
+    float: right;
+    width: 2.7rem;
+    height: 0.49rem;
+    margin-right: 0.2rem;
+    font-size: 0.14rem;
+    color: #232323;
+    border: none;
+    text-align: right;
+}
 .info-user{
     height: 0.5rem;
     padding-left: 0.2rem;
     background: inherit;
     line-height: 0.5rem;
     font-size: 0.15rem;
+    font-size: 0.12rem;
+    color: #232323;
+    background: #FAFAFA;
+}
+.info-user span{
+    position: relative;
+    display: block;
+    float: right;
+    height: 0.5rem;
+    width: 0.8rem;
     color: #EF821E;
+    padding-left: 0.25rem;
+}
+.info-user span:before{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0.16rem;
+    content: '';
+    height: 0.16rem;
+    width: 0.17rem;
+    background: url(../img/icon_sprites3.png);
+    background-size: 1rem 0.74rem;
+}
+.info-user .add:before{
+    background-position: -0.79rem -0.05rem;
+}
+.info-user .sub:before{
+    background-position: -0.41rem -0.43rem;
 }
 .info-block .info-block-line2 .info-block-line-value{
     margin-right: 0.4rem;
@@ -2177,7 +2268,7 @@ a, a:active, a:hover, a:visited {
     height: 0.4rem;
     width: 2.95rem;
     margin: 0 auto;
-    margin-top: 0.22rem;
+    margin-top: 0.62rem;
     background: #EF821E;
     border-radius: 1rem;
     font-size: 0.14rem;
