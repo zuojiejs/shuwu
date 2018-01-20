@@ -2204,6 +2204,31 @@ a, a:active, a:hover, a:visited {
     border: none;
     text-align: right;
 }
+.info-block .info-block-line .info-block-line-input2{
+    width: 1rem;
+    text-align: left;
+    margin-right: 0.3rem;
+}
+.info-block .info-block-line a{
+    display: block;
+    float: right;
+    width: 0.8rem;
+    height: 0.34rem;
+    line-height: 0.35rem;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-right: 0.2rem;
+    margin-top: 0.08rem;
+    background: #EF821E;
+    border-radius: 0.04rem;
+}
+.info-block .info-block-line a:active{
+    background: #C4650E;
+}
+.info-block .info-block-line .disabled{
+    background: #A9A9A9;
+}
 .info-user{
     height: 0.5rem;
     padding-left: 0.2rem;
@@ -2277,5 +2302,347 @@ a, a:active, a:hover, a:visited {
     line-height: 0.41rem;
 }
 .info-btn:active{
+    background: #C4650E;
+}
+/* 教师端-自我介绍 */
+.tch-my-intro-textarea{
+    height: 1.2rem;
+    width: 3.35rem;
+    background: white;
+    border: 0;
+    resize: none;
+    padding: 0.2rem;
+    color: #232323;
+    font-size: 0.14rem;
+}
+.tch-add-zhengjian{
+    width: 2.67rem;
+    height: 1.74rem;
+    border: 1px dashed #E2DDDD;
+    border-radius: 7px;
+    margin: 0 auto;
+    margin-top: 0.6rem;
+    color: #8C8C8C;
+}
+.tch-add-zhengjian i{
+    display: block;
+    width: 0.34rem;
+    height: 0.34rem;
+    margin: 0 auto;
+    margin-top: 0.54rem;
+}
+.tch-add-zhengjian p{
+    opacity: 0.7;
+    font-size: 0.14rem;
+    color: #8C8C8C;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+/* 教师端-个人中心 */
+.tch-my-item{
+    position: relative;
+    width: 3.35rem;
+    height: 0.6rem;
+    margin: 0 auto;
+    font-size: 0.16rem;
+    color: #232323;
+    line-height: 0.6rem;
+    border-bottom: 1px solid #F1F1F1;
+}
+.tch-my-item span{
+    display: block;
+    float: right;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin-right: 0.15rem;
+    opacity: 0.7;
+    font-size: 0.14rem;
+    color: #8C8C8C;
+}
+.tch-my-item .on{
+    color: #EF821E;
+}
+.tch-my-item:after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0.12rem;
+    height: 0.08rem;
+    right: 0;
+    top: 0.26rem;
+    background: url(../img/icon_sprites.png);
+    background-size: 3.06rem 2.84rem;
+    background-position: -1.69rem -1.42rem;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);  
+}
+.tch-kaoqin-head{
+    height: 0.4rem;
+    width: 3.75rem;
+    background: inherit;
+    font-size: 0.12rem;
+    color: #8C8C8C;
+    line-height: 0.4rem;
+}
+.tch-kaoqin-head span{
+    display: inline-block;
+}
+.tch-kaoqin-head span:nth-child(1){
+    margin-left: 0.2rem;
+}
+.tch-kaoqin-head span:nth-child(2){
+    margin-left: 1.5rem;
+}
+.tch-kaoqin-head span:nth-child(3){
+    margin-left: 0.34rem;
+}
+.tch-kaoqin-head span:nth-child(4){
+    margin-left: 0.34rem;
+}
+.tch-kaoqin-item{
+    height: 0.5rem;
+    width: 3.55rem;
+    background: white;
+    line-height: 0.5rem;
+    font-size: 0.13rem;
+    color: #4B4B4B;
+    padding-left: 0.2rem;
+}
+.tch-kaoqin-item label {
+    float: right;
+    display: block;
+    height: 0.5rem;
+}
+.tch-kaoqin-item label:nth-child(1){
+    margin-right: 0.32rem;
+}
+.tch-kaoqin-item label:nth-child(2){
+    margin-right: 0.42rem;
+}
+.tch-kaoqin-item label:nth-child(3){
+    margin-right: 0.41rem;
+}
+
+.tch-kaoqin-item label input {
+    display: none;
+}
+.tch-kaoqin-item label i{
+    display: block;
+    height: 0.2rem;
+    width: 0.2rem;
+    margin-top: 0.15rem;
+    border-radius: 0.2rem;
+    background: blue;
+}
+
+.tch-kaoqin-item label input:checked+i {
+    background: red;
+}
+/* 考勤弹框 */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.modal .modal-bg{
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background: #000000;
+}
+.modal .modal-content{
+    position: fixed;
+    top: 1rem;
+    left: 0.525rem;
+    width: 2.3rem;
+    padding: 0.2rem;
+    background: white;
+    border-radius: 0.12rem;
+    z-index: 99;
+}
+.modal .modal-content a{
+    display: block;
+    height: 0.4rem;
+    width: 1.65rem;
+    background: #EF821E;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+    font-size: 0.14rem;
+    ;
+    color: #FFFFFF;
+    line-height: 0.41rem;
+    text-align: center;
+}
+
+.modal .modal-content a:active {
+    background: #C4650E;
+}
+.modal .modal-content .modal-content-item{
+    font-size: 0.12rem;;
+    color: #7F7E7E;
+    margin-top: 0.28rem;
+}
+.modal .modal-content .modal-content-item:first-child{
+    margin: 0;
+}
+.modal .modal-content .modal-content-item p{
+    font-size: 0.17rem;
+    color: #030303;
+    margin-bottom: 0.1rem;
+}
+/* 教师端课程信息 */
+.tch-course-head{
+    position: relative;
+    height: 1.25rem;
+    width: 3.75rem;
+    background: #EF821E;
+    overflow: hidden;
+    text-align: center;
+}
+.tch-course-head img{
+    display: block;
+    position: absolute;
+    top: 0.14rem;
+    left: 0.14rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 0.3rem;
+}
+.tch-course-head .tch-course-head-remain{
+    height: 0.16rem;
+    width: 100%;
+    margin-top: 0.18rem;
+    margin-bottom: 0.04rem;
+    font-size: 0.11rem;
+    color: #FFFFFF;
+    line-height: 0.16rem;
+    text-align: center;
+}
+.tch-course-head .tch-course-head-num{
+    position: relative;
+    display: inline-block;
+    height: 0.5rem;
+    font-size: 0.36rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+.tch-course-head .tch-course-head-num span{
+    position: absolute;
+    right: -0.13rem;
+    bottom: 0.06rem;
+    display: block;
+    height: 0.14rem;
+    font-size: 0.1rem;
+}
+.tch-course-head .tch-course-head-total{
+    height: 0.16rem;
+    width: 1.37rem;
+    margin: 0 auto;
+    margin-top: 0.06rem; 
+    opacity: 0.5;
+    font-size: 0.1rem;
+    color: #EF821E;
+    border-radius: 0.3rem;
+    background: #FFFFFF;
+}
+.tch-course-time{
+    height: 0.3rem;
+    width: 3.35rem;
+    margin: 0 auto;
+    font-size: 0.12rem;
+    color: #4B4B4B;
+    line-height: 0.3rem;
+    border-bottom: 1px solid #F1F1F1;
+}
+.tch-course-time p{
+    float: right;
+    color: #EF821E;
+}
+.tch-course-time p::after{
+    display: inline-block;
+    content: '';
+    width: 0.12rem;
+    height: 0.08rem;
+    margin-left: 0.05rem;
+    background: url(../img/icon_sprites.png);
+    background-size: 3.06rem 2.84rem;
+    background-position: -1.69rem -1.42rem;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);  
+}
+.tch-course-shufang{
+    height: 0.5rem;
+    width: 3.35rem;
+    margin: 0 auto;
+    font-size: 0.12rem;
+    color: #8C8C8C;
+    line-height: 0.5rem;
+}
+.tch-course-item{
+    height: 0.5rem;
+    width: 3.75rem;
+    background: white;
+}
+.tch-course-item span{
+    display: block;
+    float: left;
+    width: 1.2rem;
+    height: 0.5rem;
+    margin-left: 0.2rem;
+    line-height: 0.5rem;
+    font-size: 0.12rem;
+    color: #4B4B4B;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.tch-course-item .tch-course-item-time{
+    float: left;
+    height: 0.5rem;
+    width: 0.57rem;
+    font-size: 0.1rem;
+    text-align: center;
+    color: #8C8C8C;
+}
+.tch-course-item .tch-course-item-time p{
+    margin-top: 0.09rem;
+    color: #EF821E;
+}
+.tch-course-item a{
+    display: block;
+    float: left;
+    height: 0.28rem;
+    width: 0.56rem;
+    margin-top: 0.11rem;
+    font-size: 0.14rem;
+    text-align: center;
+    line-height: 0.29rem;
+    border-radius: 1rem;
+}
+.tch-course-item .tch-course-item-btn1{
+    border: 1px solid #EF821E;
+    color: #EF821E;
+    margin-left: 0.3rem;
+}
+.tch-course-item .tch-course-item-btn1:active{
+    border: 1px solid #C4650E;
+    color: #C4650E;
+}
+.tch-course-item .tch-course-item-btn2{
+    background: #EF821E;
+    color: white;
+    margin-left: 0.07rem;
+}
+.tch-course-item .tch-course-item-btn2:active{
     background: #C4650E;
 }

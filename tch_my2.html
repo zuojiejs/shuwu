@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;background: #FAFAFA;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/weui.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>超级书屋</title>
+    <script src="./js/flexible.js"></script>
+</head>
+<body ontouchstart="" onmouseover="" style="margin-bottom: 0.7rem;">
+    <div class="wrap">
+        <div class="my-head">
+            <div class="my-head-content">
+                <img class="my-head-content-logo" src="./img/qr.png">
+                <div class="my-head-content-info">
+                    <div class="my-head-content-info-name">
+                        王老师
+                    </div>
+                    <div class="my-head-content-info-tell">
+                        158****3746
+                    </div>
+                </div>
+            </div>
+            <i></i>
+        </div>
+        <div class="tch-my-item">
+            身份证
+            <span class="on">已上传</span>
+        </div>
+        <div class="tch-my-item">
+            自我介绍
+            <span class="on">已填写</span>
+        </div>
+        <div class="tch-my-item">
+            证件上传
+            <span class="on">已上传</span>
+        </div>
+        <div class="tch-my-item" id="year">
+            教师年限
+            <span class="on">5年</span>
+        </div>
+        <div class="foot">
+            <!-- foot-item激活态添加类on -->
+            <div class="foot-item">
+                <i></i>
+                <span>书房</span>
+            </div>
+            <div class="foot-item">
+                <i></i>
+                <span>课程</span>
+            </div>
+            <div class="foot-item">
+                <i></i>
+                <span>我的</span>
+            </div>
+        </div>
+    </div>
+    <script src="./js/weui.min.js"></script>
+    <script src="./js/zepto.min.js"></script>
+    <script>
+        $('#year').bind("click", function(){
+            weui.picker([
+                {
+                    label: '1年',
+                    value: 0,
+                },
+                {
+                    label: '2年',
+                    value: 1
+                },
+                {
+                    label: '3年',
+                    value: 3
+                }
+            ], {
+                className: 'custom-classname',
+                container: 'body',
+                defaultValue: [1],
+                onChange: function (result) {
+                    // console.log(result)
+                },
+                onConfirm: function (result) {
+                    $('#year span').html(result[0].label);
+                },
+                id: 'yearPicker'
+            });
+        });
+    </script>
+</body>
+</html>

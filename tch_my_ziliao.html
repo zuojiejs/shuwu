@@ -27,6 +27,11 @@
                 <span class="info-block-line-title">手机</span>
                 <input class="info-block-line-input" value="159  9388  3984">
             </div>
+            <div class="info-block-line">
+                <span class="info-block-line-title">验证码</span>
+                <a id="yzm">获取验证码</a>
+                <input class="info-block-line-input info-block-line-input2" placeholder="请输入验证码">
+            </div>
         </div>
         <a class="info-btn">完成</a>
     </div>
@@ -35,6 +40,9 @@
     <script>
         $('.info-face').bind('click', function(){
             //调用微信SDK选择照片
+        });
+        $('#yzm').bind('click', function(){
+            $(this).html('40s后重发').addClass('disabled');
         });
     </script>
 </body>
