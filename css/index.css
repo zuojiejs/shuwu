@@ -2326,10 +2326,13 @@ a, a:active, a:hover, a:visited {
 }
 .tch-add-zhengjian i{
     display: block;
-    width: 0.34rem;
-    height: 0.34rem;
+    width: 0.35rem;
+    height: 0.35rem;
     margin: 0 auto;
     margin-top: 0.54rem;
+    background: url(../img/icon_sprites4.png);
+    background-size: 0.75rem 0.75rem;
+    background-position: -0.05rem -0.05rem;
 }
 .tch-add-zhengjian p{
     opacity: 0.7;
@@ -2436,11 +2439,13 @@ a, a:active, a:hover, a:visited {
     width: 0.2rem;
     margin-top: 0.15rem;
     border-radius: 0.2rem;
-    background: blue;
+    background: url(../img/icon_sprites4.png);
+    background-size: 0.75rem 0.75rem;
+    background-position: -0.5rem -0.05rem;
 }
 
 .tch-kaoqin-item label input:checked+i {
-    background: red;
+    background-position: -0.05rem -0.5rem;
 }
 /* 考勤弹框 */
 .modal{
